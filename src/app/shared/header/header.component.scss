@@ -1,5 +1,89 @@
 @import '../../../mixins.scss';
+@import '../../../variables.scss';
 
 header {
     @include container();
+
+    >div {
+        @include dFlex($jc: space-between);
+    }
+}
+
+ul {
+    @include dFlex($jc: space-between, $g: 1.5rem);
+}
+
+li {
+    >button {
+        padding: 0.281rem 0.75rem;
+    }
+}
+
+a {
+    font-weight: $font-weight-normal;
+    font-size: $font-size-lg;
+    color: $white;
+    position: relative;
+
+    &:hover::before {
+        transform: translateX(-50%);
+        border-radius: 100%;
+        position: absolute;
+        background: $dot;
+        bottom: -10px;
+        height: 6.4px;
+        content: '';
+        width: 6.4px;
+        left: 50%;
+    }
+}
+
+.focused-link {
+    color: $teal-dark;
+
+    &::before {
+        transform: translateX(-50%);
+        border-radius: 100%;
+        position: absolute;
+        background: $dot;
+        bottom: -10px;
+        height: 6.4px;
+        content: '';
+        width: 6.4px;
+        left: 50%;
+    }
+}
+
+.language-btn-container {
+    border: 1px solid $teal-dark;
+    border-radius: 100px;
+
+    &:hover {
+        outline: 1px solid $white;
+        border: 1px solid transparent;
+    }
+}
+
+.language-active {
+    background-color: $teal-dark;
+    border-radius: 100px;
+    color: $white;
+    font-weight: $font-weight-bold;
+    font-size: $font-size-base;
+
+    &:hover {
+        cursor: default;
+    }
+}
+
+.language-inactive {
+    background-color: unset;
+    color: darken($teal-dark, 30%);
+    font-weight: $font-weight-normal;
+    font-size: $font-size-base;
+}
+
+.logo {
+    width: 132px;
+    height: 48px;
 }

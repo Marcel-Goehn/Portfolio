@@ -1,12 +1,30 @@
 import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss'
 })
 export class HeaderComponent {
+  english: boolean = true;
+  german: boolean = false;
+  aboutMeIsClicked: boolean = false;
+  skillsIsClicked: boolean = false;
+  projectsIsClicked: boolean = false;
 
+
+  changeLanguage() {
+    this.english = !this.english;
+    this.german = !this.german;
+  }
+
+
+  changeActiveNavLink(booleanOne: boolean, booleanTwo: boolean, booleanThree:boolean) {
+    this.aboutMeIsClicked = booleanOne;
+    this.skillsIsClicked = booleanTwo;
+    this.projectsIsClicked = booleanThree;
+  }
 }

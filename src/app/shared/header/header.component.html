@@ -1,3 +1,16 @@
 <header>
-    <p>hallo welt</p>
+    <div>
+        <nav>
+            <ul>
+                <li class="language-btn-container">
+                    <button [disabled]="english" (click)="changeLanguage()" [ngClass]="english ? 'language-active' : 'language-inactive'" class="fira">EN</button>
+                    <button [disabled]="german" (click)="changeLanguage()" [ngClass]="german ? 'language-active' : 'language-inactive'" class="fira">DE</button>
+                </li>
+                <li><a (click)="changeActiveNavLink(true, false, false)" [ngClass]="{'focused-link' : aboutMeIsClicked}" class="fira">About me</a></li>
+                <li><a (click)="changeActiveNavLink(false, true, false)" [ngClass]="{'focused-link' : skillsIsClicked}" class="fira">Skills</a></li>
+                <li><a (click)="changeActiveNavLink(false, false, true)" [ngClass]="{'focused-link' : projectsIsClicked}" class="fira">Projects</a></li>
+            </ul>
+        </nav>
+        <img class="logo" src="assets/img/hero-section/logo.webp" alt="Logo">
+    </div>
 </header>
