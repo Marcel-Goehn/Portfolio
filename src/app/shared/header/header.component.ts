@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 @Component({
@@ -14,6 +14,7 @@ export class HeaderComponent {
   aboutMeIsClicked: boolean = false;
   skillsIsClicked: boolean = false;
   projectsIsClicked: boolean = false;
+  currentWindowWidth: number = window.innerWidth;
 
 
   changeLanguage() {
@@ -27,4 +28,11 @@ export class HeaderComponent {
     this.skillsIsClicked = booleanTwo;
     this.projectsIsClicked = booleanThree;
   }
+
+
+  @HostListener('window:resize') 
+    onResize() {
+      this.currentWindowWidth = window.innerWidth;
+      console.log(this.currentWindowWidth);
+    }
 }
