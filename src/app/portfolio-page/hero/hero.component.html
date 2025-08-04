@@ -1,15 +1,47 @@
 <section>
     <div class="container">
-        <div>
+        <div class="title-container">
             <h2 class="fira">Frontend Developer</h2>
             <h1 class="karla">Marcel Göhn</h1>
             <div class="link-btns-container">
-                <a class="karla navigate-to-links" href="">Check my work</a>
-                <a class="karla navigate-to-links" href="">Contact me</a>
+                <a class="karla navigate-to-links" href="#">Check my work</a>
+                <a class="karla navigate-to-links" href="#">Contact me</a>
             </div>
-            @if(currentWindowWidth > 576) { 
+        </div>
+        <div class="hero-bottom-container">
+            <div class="bottom-container-side">
+                <div class="direction">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px"
+                        fill="#FFFFFF">
+                        <path d="M480-96 216-360l51-51 177 177v-630h72v630l177-177 51 51L480-96Z" />
+                    </svg>
+                </div>
+                <div class="bottom-nav-border"></div>
+            </div>
+            <div class="bottom-container-side">
+                @if(currentWindowWidth > 576) {
                 <a class="email-link karla" href="">marcelgoehn&#64;googlemail.com</a>
-            }
+                }
+                <div class="social-media-icons-container">
+                    <a (mouseenter)="changeGithubHoverState(true)" [ngClass]="{'d_none' : githubIsHovered}"
+                        href="https://github.com/Marcel-Goehn" target="_blank">
+                        <img src="assets/img/hero-section/Github.png" alt="Github icon">
+                    </a>
+                    <a (mouseleave)="changeGithubHoverState(false)" [ngClass]="{'d_none' : !githubIsHovered}"
+                        href="https://github.com/Marcel-Goehn" target="_blank">
+                        <img src="assets/img/hero-section/Github-white.png" alt="Github icon in white">
+                    </a>
+                    <a (mouseenter)="changeLinkedInHoverState(true)" [ngClass]="{'d_none' : linkedInIsHovered}"
+                        href="https://www.linkedin.com/in/marcel-g%C3%B6hn-11b050353/">
+                        <img src="assets/img/hero-section/Linkedin.png" alt="Linkedin icon">
+                    </a>
+                    <a (mouseleave)="changeLinkedInHoverState(false)" [ngClass]="{'d_none' : !linkedInIsHovered}"
+                        href="https://www.linkedin.com/in/marcel-g%C3%B6hn-11b050353/" target="_blank">
+                        <img src="assets/img/hero-section/Linkedin-white.png" alt="Linkedin icon in white">
+                    </a>
+                </div>
+                <div class="bottom-social-border"></div>
+            </div>
         </div>
     </div>
 </section>

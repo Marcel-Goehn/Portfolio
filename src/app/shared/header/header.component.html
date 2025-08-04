@@ -9,11 +9,11 @@
                     <button [disabled]="german" (click)="changeLanguage()"
                         [ngClass]="german ? 'language-active' : 'language-inactive'" class="fira">DE</button>
                 </li>
-                <li><a href="" (click)="changeActiveNavLink(true, false, false)"
+                <li><a href="#" (click)="changeActiveNavLink(true, false, false)"
                         [ngClass]="{'focused-link' : aboutMeIsClicked}" class="fira">About me</a></li>
-                <li><a href="" (click)="changeActiveNavLink(false, true, false)"
+                <li><a href="#" (click)="changeActiveNavLink(false, true, false)"
                         [ngClass]="{'focused-link' : skillsIsClicked}" class="fira">Skills</a></li>
-                <li><a href="" (click)="changeActiveNavLink(false, false, true)"
+                <li><a href="#" (click)="changeActiveNavLink(false, false, true)"
                         [ngClass]="{'focused-link' : projectsIsClicked}" class="fira">Projects</a></li>
             </ul>
         </nav>
@@ -39,11 +39,11 @@
                 <div class="wrapper" (click)="$event.stopPropagation()">
                     <nav>
                         <ul>
-                            <li><a href="" (click)="changeActiveNavLink(true, false, false)" class="fira">About me</a>
+                            <li><a href="#" (click)="changeActiveNavLink(true, false, false)" class="fira">About me</a>
                             </li>
-                            <li><a href="" (click)="changeActiveNavLink(false, true, false)" class="fira">Skills</a>
+                            <li><a href="#" (click)="changeActiveNavLink(false, true, false)" class="fira">Skills</a>
                             </li>
-                            <li><a href="" (click)="changeActiveNavLink(false, false, true)" class="fira">Projects</a>
+                            <li><a href="#" (click)="changeActiveNavLink(false, false, true)" class="fira">Projects</a>
                             </li>
                             <li class="language-btn-container">
                                 <button [disabled]="english" (click)="changeLanguage()"

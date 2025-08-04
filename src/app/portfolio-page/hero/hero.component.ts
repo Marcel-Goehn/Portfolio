@@ -1,12 +1,25 @@
+import { CommonModule } from '@angular/common';
 import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-hero',
   standalone: true,
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './hero.component.html',
   styleUrl: './hero.component.scss'
 })
 export class HeroComponent {
   @Input() currentWindowWidth: number = window.innerWidth;
+  linkedInIsHovered = false;
+  githubIsHovered = false;
+
+
+  changeGithubHoverState(bool: boolean) {
+    this.githubIsHovered = bool;
+  }
+
+
+  changeLinkedInHoverState(bool: boolean) {
+    this.linkedInIsHovered = bool;
+  }
 }
