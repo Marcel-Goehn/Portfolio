@@ -15,7 +15,7 @@ export class HeaderComponent {
   skillsIsClicked: boolean = false;
   projectsIsClicked: boolean = false;
   currentWindowWidth: number = window.innerWidth;
-
+  burgerMenuOpen: boolean = false;
 
   changeLanguage() {
     this.english = !this.english;
@@ -23,16 +23,25 @@ export class HeaderComponent {
   }
 
 
-  changeActiveNavLink(booleanOne: boolean, booleanTwo: boolean, booleanThree:boolean) {
+  changeActiveNavLink(booleanOne: boolean, booleanTwo: boolean, booleanThree: boolean) {
     this.aboutMeIsClicked = booleanOne;
     this.skillsIsClicked = booleanTwo;
     this.projectsIsClicked = booleanThree;
   }
 
 
-  @HostListener('window:resize') 
-    onResize() {
-      this.currentWindowWidth = window.innerWidth;
-      console.log(this.currentWindowWidth);
-    }
+  @HostListener('window:resize')
+  onResize() {
+    this.currentWindowWidth = window.innerWidth;
+  }
+
+
+  openBurgerMenu() {
+    this.burgerMenuOpen = true;
+  }
+
+
+  closeBurgerMenu() {
+    this.burgerMenuOpen = false;
+  }
 }

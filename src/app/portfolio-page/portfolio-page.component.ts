@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 import { HeroComponent } from "./hero/hero.component";
 
 @Component({
@@ -9,5 +9,10 @@ import { HeroComponent } from "./hero/hero.component";
   styleUrl: './portfolio-page.component.scss'
 })
 export class PortfolioPageComponent {
+  currentWindowWidth: number = window.innerWidth;
 
+  @HostListener('window:resize')
+  onResize() {
+    this.currentWindowWidth = window.innerWidth;
+  }
 }
