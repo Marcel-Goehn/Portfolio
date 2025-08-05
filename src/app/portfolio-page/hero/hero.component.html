@@ -20,9 +20,17 @@
             </div>
             <div class="bottom-container-side">
                 @if(currentWindowWidth > 576) {
-                <a class="email-link karla" href="">marcelgoehn&#64;googlemail.com</a>
+                <a class="email-link karla" href="mailto:marcelgoehn@googlemail.com">marcelgoehn&#64;googlemail.com</a>
                 }
                 <div class="social-media-icons-container">
+                    @if(currentWindowWidth <= 576) {
+                        <a (mouseenter)="changeMailHoverState(true)" [ngClass]="{'d_none' : mailIsHovered}" href="mailto:marcelgoehn@googlemail.com">
+                            <img src="assets/img/hero-section/mail.png" alt="E-Mail icon">
+                        </a>
+                        <a (mouseleave)="changeMailHoverState(false)" [ngClass]="{'d_none' : !mailIsHovered}" href="mailto:marcelgoehn@googlemail.com">
+                            <img src="assets/img/hero-section/mail-white.png" alt="E-Mail icon in white">
+                        </a>
+                    }
                     <a (mouseenter)="changeGithubHoverState(true)" [ngClass]="{'d_none' : githubIsHovered}"
                         href="https://github.com/Marcel-Goehn" target="_blank">
                         <img src="assets/img/hero-section/Github.png" alt="Github icon">

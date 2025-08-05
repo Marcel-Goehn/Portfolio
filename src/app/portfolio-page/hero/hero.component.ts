@@ -12,6 +12,7 @@ export class HeroComponent {
   @Input() currentWindowWidth: number = window.innerWidth;
   linkedInIsHovered = false;
   githubIsHovered = false;
+  mailIsHovered = false;
 
 
   changeGithubHoverState(bool: boolean) {
@@ -21,5 +22,10 @@ export class HeroComponent {
 
   changeLinkedInHoverState(bool: boolean) {
     this.linkedInIsHovered = bool;
+  }
+
+
+  changeMailHoverState(bool: boolean) {
+    this.mailIsHovered = bool;
   }
 }

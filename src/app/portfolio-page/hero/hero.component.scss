@@ -111,6 +111,21 @@ h1 {
     .navigate-to-links {
         padding: 0.625rem 0.625rem;
     }
+    .bottom-nav-border {
+        height: 180px;
+    }
+    .bottom-social-border {
+        height: 80px;
+    }
+}
+
+@media (max-height: 820px) {
+    .bottom-nav-border {
+        height: 100px;
+    }
+    .bottom-social-border {
+        height: 10px;
+    }
 }
 
 @media (max-width: 768px) {}
