@@ -107,6 +107,23 @@ h1 {
     width: 0;
 }
 
+.animate-arrow {
+    animation-name: arrow-bounce;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes arrow-bounce {
+    0% {
+
+    }
+    100% {
+        transform: translateY(10px);
+    }
+}
+
 @media (max-width: 576px) {
     .navigate-to-links {
         padding: 0.625rem 0.625rem;
