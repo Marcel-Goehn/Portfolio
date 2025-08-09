@@ -87,6 +87,8 @@ p {
 @media (max-width: 992px) {
     .flex-container {
         flex-direction: column;
+        padding-block: 6.25rem;
+        gap: 2.5rem;
 
         >img {
             transform: translateY(0);

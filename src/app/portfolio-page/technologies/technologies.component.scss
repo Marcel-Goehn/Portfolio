@@ -1,0 +1,75 @@
+@import '../../../variables.scss';
+@import '../../../mixins.scss';
+
+section {
+    background-color: $black;
+}
+
+.container {
+    @include container();
+}
+
+h4 {
+    text-align: start;
+    color: $teal-dark;
+    font-weight: $font-weight-bold;
+    font-size: $font-size-xl;
+    margin-bottom: 1.25rem;
+}
+
+.flex-container {
+    @include dFlex($jc: space-between, $ai: flex-start);
+}
+
+.skill-set-container {
+    padding: 2rem; 
+    background-color: $mint-glass ;
+    border-radius: 30px;
+    border: 1px solid $teal-dark;
+}
+
+h3 {
+    font-weight: $font-weight-bold;
+    color: $teal-dark;
+    font-size: $font-size-5xl;
+    margin-bottom: 2.5rem;
+    text-align: start;
+}
+
+.skill-introduction {
+    font-weight: $font-weight-normal;
+    font-size: $font-size-l;
+    color: $white;
+    margin-bottom: 2rem;
+}
+
+.skill-question, span {
+    font-weight: $font-weight-bold;
+    font-size: $font-size-xl;
+}
+
+.skill-question {
+    color: $white;
+}
+
+span {
+    color: $teal-dark;
+}
+
+.contact-paragraph {
+    font-weight: $font-weight-normal;
+    font-size: $font-size-base;
+    color: $white;
+    margin-top: 1rem;
+    margin-bottom: 2.5rem;
+}
+
+button {
+    padding: 0.813rem 1.5rem;
+    border: 1px solid $white;
+    background-color: transparent;
+    border-radius: 100px;
+    font-weight: $font-weight-normal;
+    font-size: $font-size-l;
+    color: $white;
+}
