@@ -1,4 +1,4 @@
-import { Component, HostListener } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 @Component({
@@ -6,42 +6,45 @@ import { CommonModule } from '@angular/common';
   standalone: true,
   imports: [CommonModule],
   templateUrl: './header.component.html',
-  styleUrl: './header.component.scss'
+  styleUrl: './header.component.scss',
+  // changeDetection: ChangeDetectionStrategy.OnPush,
+  host: {
+    '(window:resize)': 'onResize()'
+  }
 })
 export class HeaderComponent {
-  english: boolean = true;
-  german: boolean = false;
-  aboutMeIsClicked: boolean = false;
-  skillsIsClicked: boolean = false;
-  projectsIsClicked: boolean = false;
-  currentWindowWidth: number = window.innerWidth;
-  burgerMenuOpen: boolean = false;
+  english = signal(true);
+  german = signal(false);
+  aboutMeIsClicked = signal(false);
+  skillsIsClicked = signal(false);
+  projectsIsClicked = signal(false);
+  currentWindowWidth = signal(window.innerWidth);
+  burgerMenuOpen = signal(false);
 
   changeLanguage() {
-    this.english = !this.english;
-    this.german = !this.german;
+    this.english.set(!this.english());
+    this.german.set(!this.german());
   }
 
 
   changeActiveNavLink(booleanOne: boolean, booleanTwo: boolean, booleanThree: boolean) {
-    this.aboutMeIsClicked = booleanOne;
-    this.skillsIsClicked = booleanTwo;
-    this.projectsIsClicked = booleanThree;
+    this.aboutMeIsClicked.set(booleanOne);
+    this.skillsIsClicked.set(booleanTwo);
+    this.projectsIsClicked.set(booleanThree);
   }
 
 
-  @HostListener('window:resize')
   onResize() {
-    this.currentWindowWidth = window.innerWidth;
+    this.currentWindowWidth.set(window.innerWidth);
   }
 
 
   openBurgerMenu() {
-    this.burgerMenuOpen = true;
+    this.burgerMenuOpen.set(true);
   }
 
 
   closeBurgerMenu() {
-    this.burgerMenuOpen = false;
+    this.burgerMenuOpen.set(false);
   }
 }
