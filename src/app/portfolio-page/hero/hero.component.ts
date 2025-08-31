@@ -1,31 +1,32 @@
 import { CommonModule } from '@angular/common';
-import { Component, Input } from '@angular/core';
+import { ChangeDetectionStrategy, Component, input, signal } from '@angular/core';
 
 @Component({
   selector: 'app-hero',
   standalone: true,
   imports: [CommonModule],
   templateUrl: './hero.component.html',
-  styleUrl: './hero.component.scss'
+  styleUrl: './hero.component.scss',
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class HeroComponent {
-  @Input() currentWindowWidth: number = window.innerWidth;
-  linkedInIsHovered = false;
-  githubIsHovered = false;
-  mailIsHovered = false;
+  currentWindowWidth = input.required<number>();
+  linkedInIsHovered = signal(false);
+  githubIsHovered = signal(false);
+  mailIsHovered = signal(false);
 
 
   changeGithubHoverState(bool: boolean) {
-    this.githubIsHovered = bool;
+    this.githubIsHovered.set(bool);
   }
 
 
   changeLinkedInHoverState(bool: boolean) {
-    this.linkedInIsHovered = bool;
+    this.linkedInIsHovered.set(bool);
   }
 
 
   changeMailHoverState(bool: boolean) {
-    this.mailIsHovered = bool;
+    this.mailIsHovered.set(bool);
   }
 }

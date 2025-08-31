@@ -1,15 +1,16 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component, signal } from '@angular/core';
 
 @Component({
   selector: 'app-technologies',
   standalone: true,
   imports: [CommonModule],
   templateUrl: './technologies.component.html',
-  styleUrl: './technologies.component.scss'
+  styleUrl: './technologies.component.scss',
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class TechnologiesComponent {
-  skills = [
+  skills = signal([
     {
       path: 'assets/img/technologies/html.svg',
       alt: 'HTML Logo',
@@ -65,5 +66,5 @@ export class TechnologiesComponent {
       alt: 'Growth Mindset Logo',
       name: 'Growth mindset'
     },
-  ];
+  ]);
 }

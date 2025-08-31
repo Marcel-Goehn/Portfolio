@@ -89,6 +89,7 @@ button {
 
     >div {
         @include dFlex($g: 0.5rem);
+        position: relative;
         flex-direction: column;
         text-align: center;
         // width: 104px;
@@ -124,8 +125,28 @@ button {
     }
 }
 
+.future-skills-container:hover .technologies-to-learn {
+    display: block;
+}
+
+.technologies-to-learn {
+    position: absolute;
+    width: 188px;
+    max-width: 1000px;
+    top: -109px;
+    left: -24px;
+    display: none;
+    transform: scale(1) !important;
+}
+
 @media (max-width: 1100px) {
     .flex-container {
         flex-direction: column;
+    }
+}
+
+@media (max-width: 630px) {
+    .skill-icons-container {
+        justify-content: center;
     }
 }

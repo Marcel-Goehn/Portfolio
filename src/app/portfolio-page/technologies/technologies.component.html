@@ -14,11 +14,21 @@
                 <button class="karla">Let's Talk</button>
             </div>
             <div class="skill-icons-container">
-                @for (skill of skills; track $index) {
+                @for (skill of skills(); track $index) {
+                @if(skill.name === 'Growth mindset') {
+                <div class="future-skills-container"
+                    [ngClass]="{'mindset-blue-font' : skill.name === 'Growth mindset'}">
+                    <img [src]="skill.path" [alt]="skill.alt">
+                    <img class="technologies-to-learn" src="assets/img/technologies/learning-interest.svg"
+                        alt="Next technologies I aim to learn">
+                    <p class="fira skill-name">{{ skill.name }}</p>
+                </div>
+                } @else {
                 <div [ngClass]="{'mindset-blue-font' : skill.name === 'Growth mindset'}">
                     <img [src]="skill.path" [alt]="skill.alt">
                     <p class="fira skill-name">{{ skill.name }}</p>
                 </div>
+                }
                 }
             </div>
         </div>
