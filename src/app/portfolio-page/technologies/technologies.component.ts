@@ -1,10 +1,11 @@
 import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component, signal } from '@angular/core';
+import { ButtonComponent } from "../../shared/button/button.component";
 
 @Component({
   selector: 'app-technologies',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, ButtonComponent],
   templateUrl: './technologies.component.html',
   styleUrl: './technologies.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,

@@ -44,20 +44,20 @@ h1 {
     @include dFlex($g: 3rem);
 }
 
-.navigate-to-links {
-    color: $white;
-    border: 1px solid $white;
-    border-radius: 100px;
-    padding: 0.813rem 1.5rem;
-    font-weight: $font-weight-normal;
-    font-size: $font-size-l;
-    transition: border-color 300ms ease-out, color 300ms ease-out;
+// .navigate-to-links {
+//     color: $white;
+//     border: 1px solid $white;
+//     border-radius: 100px;
+//     padding: 0.813rem 1.5rem;
+//     font-weight: $font-weight-normal;
+//     font-size: $font-size-l;
+//     transition: border-color 300ms ease-out, color 300ms ease-out;
 
-    &:hover {
-        border-color: $teal-dark;
-        color: $teal-dark;
-    }
-}
+//     &:hover {
+//         border-color: $teal-dark;
+//         color: $teal-dark;
+//     }
+// }
 
 .email-link {
     color: $white;
@@ -125,9 +125,9 @@ h1 {
 }
 
 @media (max-width: 576px) {
-    .navigate-to-links {
-        padding: 0.625rem 0.625rem;
-    }
+    // .navigate-to-links {
+    //     padding: 0.625rem 0.625rem;
+    // }
     .bottom-nav-border {
         height: 180px;
     }

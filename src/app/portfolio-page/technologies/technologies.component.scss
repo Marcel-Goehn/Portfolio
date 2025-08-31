@@ -66,21 +66,21 @@ span {
     margin-bottom: 2.5rem;
 }
 
-button {
-    padding: 0.813rem 1.5rem;
-    border: 1px solid $white;
-    background-color: transparent;
-    border-radius: 100px;
-    font-weight: $font-weight-normal;
-    font-size: $font-size-l;
-    color: $white;
-    transition: border-color 300ms ease-out, color 300ms ease-out;
+// button {
+//     padding: 0.813rem 1.5rem;
+//     border: 1px solid $white;
+//     background-color: transparent;
+//     border-radius: 100px;
+//     font-weight: $font-weight-normal;
+//     font-size: $font-size-l;
+//     color: $white;
+//     transition: border-color 300ms ease-out, color 300ms ease-out;
 
-    &:hover {
-        border-color: $teal-dark;
-        color: $teal-dark;
-    }
-}
+//     &:hover {
+//         border-color: $teal-dark;
+//         color: $teal-dark;
+//     }
+// }
 
 .skill-icons-container {
     @include dFlex($g: 4.5rem, $jc: flex-start, $ai: flex-start);
