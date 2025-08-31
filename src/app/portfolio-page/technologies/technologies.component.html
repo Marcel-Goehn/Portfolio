@@ -2,7 +2,7 @@
     <div class="container">
         <h4 class="karla">Technologies</h4>
         <div class="flex-container">
-            <div class="skill-set-container">
+            <app-card class="skill-set-container">
                 <h3 class="fira">Skill Set</h3>
                 <p class="skill-introduction karla">A short introduction of your skills. Highlight your experience of
                     using different front-end
@@ -12,7 +12,7 @@
                 <p class="karla contact-paragraph">Feel free to contact me. I look forward to expanding on my previous
                     knowledge.</p>
                 <button appButton class="karla">Let's Talk</button>
-            </div>
+            </app-card>
             <div class="skill-icons-container">
                 @for (skill of skills(); track $index) {
                 @if(skill.name === 'Growth mindset') {
