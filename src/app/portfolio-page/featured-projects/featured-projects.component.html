@@ -1,0 +1,53 @@
+<section>
+    <div class="container">
+        <h4 class="karla">Portfolio</h4>
+        <h3 class="fira">Featured Projects</h3>
+        <p class="karla explore-paragraph">Explore a selection of my work here - Interact with<br>projects to see my
+            skills in action.</p>
+        <div class="featured-projects">
+            <div class="project-names">
+                <div class="border-block project" (mouseenter)="toggleImage('one')" (mouseleave)="toggleImage('one')">
+                    <div>
+                        <span class="fira project-name">Join</span>
+                    </div>
+                    <div class="karla technologies">
+                        <span>HTML</span>
+                        <div></div>
+                        <span>CSS</span>
+                        <div></div>
+                        <span>JavaScript</span>
+                        <div></div>
+                        <span>Firebase</span>
+                    </div>
+                </div>
+                <div class="project" (mouseenter)="toggleImage('two')" (mouseleave)="toggleImage('two')">
+                    <div>
+                        <span class="fira project-name">El Pollo Loco</span>
+                    </div>
+                    <div class="karla technologies">
+                        <span>HTML</span>
+                        <div></div>
+                        <span>CSS</span>
+                        <div></div>
+                        <span>JavaScript</span>
+                    </div>
+                </div>
+                <div class="border-block project" (mouseenter)="toggleImage('three')" (mouseleave)="toggleImage('three')">
+                    <div>
+                        <span class="fira project-name">Pokedex</span>
+                    </div>
+                    <div class="karla technologies">
+                        <span>HTML</span>
+                        <div></div>
+                        <span>CSS</span>
+                        <div></div>
+                        <span>JavaScript</span>
+                    </div>
+                </div>
+            </div>
+            <img [ngClass]="{ 'd_none' : !projectOneIsHovered() }" id="project-one" src="assets/img/featured-projects/join.png" alt="My Join kanban board for tracking tasks">
+            <img [ngClass]="{ 'd_none' : !projectTwoIsHovered() }" id="project-two" src="assets/img/featured-projects/el-pollo-loco.png" alt="A screenshot of Pepe, the character of El-Pollo-Loco">
+            <img [ngClass]="{ 'd_none' : !projectThreeIsHovered() }" id="project-three" src="assets/img/featured-projects/da-bubble.png" alt="A screenshot of my Slack clone">
+        </div>
+    </div>
+</section>

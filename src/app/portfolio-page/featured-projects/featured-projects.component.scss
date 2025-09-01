@@ -1,0 +1,93 @@
+@import '../../../variables.scss';
+@import '../../../mixins.scss';
+
+section {
+    background-color: $black;
+    padding-top: 9rem;
+}
+
+.container {
+    @include container();
+}
+
+.d_none {
+    display: none;
+}
+
+h4 {
+    font-weight: $font-weight-bold;
+    font-size: $font-size-xl;
+    color: $teal-dark;
+}
+
+h3 {
+    margin-top: 1.25rem;
+    font-weight: $font-weight-bold;
+    color: $teal-dark;
+    font-size: $font-size-5xl;
+}
+
+.explore-paragraph {
+    margin-top: 2.563rem;
+    font-weight: $font-weight-normal;
+    font-size: $font-size-l;
+    color: $white;
+}
+
+.featured-projects {
+    @include dFlex($jc: space-between);
+    margin-top: 2.563rem;
+}
+
+.project-names {
+    width: 80%;
+}
+
+.border-block {
+    border-top: 1px solid $teal-dark;
+    border-bottom: 1px solid $teal-dark;
+}
+
+.project {
+    @include dFlex($jc: space-between);
+    padding: 2.5rem 2rem;
+    cursor: pointer;
+    transition: background-color 150ms ease-in;
+}
+
+.project:hover {
+    background-color: $fetaured-projects-bg;
+}
+
+.project-name {
+    font-weight: $font-weight-bold;
+    font-size: $font-size-xl;
+    color: $white;
+}
+
+#project-one {
+    align-self: flex-start;
+}
+
+#project-two {
+    align-self: center;
+}
+
+#project-three {
+    align-self: flex-end;
+}
+
+.technologies {
+    @include dFlex($g: 6px);
+
+    >div {
+        border: 1px solid $teal-dark;
+        height: 17px;
+    }
+
+    >span {
+        font-weight: $font-weight-normal;
+        color: $white;
+        font-size: $font-size-l;
+    }
+}

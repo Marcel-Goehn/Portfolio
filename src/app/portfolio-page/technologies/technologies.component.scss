@@ -62,22 +62,6 @@ span {
     margin-bottom: 2.5rem;
 }
 
-// button {
-//     padding: 0.813rem 1.5rem;
-//     border: 1px solid $white;
-//     background-color: transparent;
-//     border-radius: 100px;
-//     font-weight: $font-weight-normal;
-//     font-size: $font-size-l;
-//     color: $white;
-//     transition: border-color 300ms ease-out, color 300ms ease-out;
-
-//     &:hover {
-//         border-color: $teal-dark;
-//         color: $teal-dark;
-//     }
-// }
-
 .skill-icons-container {
     @include dFlex($g: 4.5rem, $jc: flex-start, $ai: flex-start);
     flex-wrap: wrap;
@@ -121,10 +105,6 @@ span {
     }
 }
 
-.future-skills-container:hover .technologies-to-learn {
-    display: block;
-}
-
 .technologies-to-learn {
     position: absolute;
     width: 188px;
@@ -133,6 +113,10 @@ span {
     left: -24px;
     display: none;
     transform: scale(1) !important;
+}
+
+.future-skills-container:hover .technologies-to-learn {
+    display: block;
 }
 
 @media (max-width: 1100px) {
