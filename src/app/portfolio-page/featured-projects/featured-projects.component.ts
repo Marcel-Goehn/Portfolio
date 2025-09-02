@@ -1,10 +1,11 @@
 import { NgClass } from '@angular/common';
 import { ChangeDetectionStrategy, Component, signal } from '@angular/core';
+import { DialogComponent } from "../../shared/dialog/dialog.component";
 
 @Component({
   selector: 'app-featured-projects',
   standalone: true,
-  imports: [NgClass],
+  imports: [NgClass, DialogComponent],
   templateUrl: './featured-projects.component.html',
   styleUrl: './featured-projects.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush
