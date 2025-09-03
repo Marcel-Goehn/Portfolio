@@ -10,23 +10,17 @@ section {
 }
 
 .flex-container {
-    @include dFlex($jc: space-between, $g: 6rem, $ai: flex-start);
+    @include dFlex($jc: space-between, $g: 2.5rem, $ai: flex-start);
     padding-top: 15.125rem;
     padding-bottom: 10.375rem;
-
-    >img {
-        flex: 1;
-        border-radius: 30px;
-        // width: 568px;
-        height: 452px;
-        object-fit: cover;
-        object-position: center;
-        transform: translateY(-98px);
-    }
 
     >div {
         flex: 1;
     }
+}
+
+.image-container {
+    transform: translateY(-98px);
 }
 
 h4 {
@@ -61,6 +55,7 @@ p {
         height: 32px;
         width: 32px;
     }
+
     transform: translateX(-15px);
 
     >p {
@@ -81,10 +76,15 @@ p {
     .flex-container {
         flex-direction: column;
         padding-block: 6.25rem;
-        gap: 2.5rem;
+    }
 
-        >img {
-            transform: translateY(0);
-        }
+    .image-container {
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 768px) {
+    .flex-container {
+        align-items: center;
     }
 }
