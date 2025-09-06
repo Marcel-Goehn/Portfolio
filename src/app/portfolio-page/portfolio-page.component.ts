@@ -3,11 +3,12 @@ import { HeroComponent } from "./hero/hero.component";
 import { AboutMeComponent } from "./about-me/about-me.component";
 import { TechnologiesComponent } from "./technologies/technologies.component";
 import { FeaturedProjectsComponent } from "./featured-projects/featured-projects.component";
+import { CarouselComponent } from "./carousel/carousel.component";
 
 @Component({
   selector: 'app-portfolio-page',
   standalone: true,
-  imports: [HeroComponent, AboutMeComponent, TechnologiesComponent, FeaturedProjectsComponent],
+  imports: [HeroComponent, AboutMeComponent, TechnologiesComponent, FeaturedProjectsComponent, CarouselComponent],
   templateUrl: './portfolio-page.component.html',
   styleUrl: './portfolio-page.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
