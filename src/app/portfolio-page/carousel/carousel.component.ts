@@ -1,12 +1,12 @@
-import { Component } from '@angular/core';
-import { CardComponent } from "../../shared/card/card.component";
+import { Component, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
 @Component({
   selector: 'app-carousel',
   standalone: true,
-  imports: [CardComponent],
+  imports: [],
   templateUrl: './carousel.component.html',
-  styleUrl: './carousel.component.scss'
+  styleUrl: './carousel.component.scss',
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
 export class CarouselComponent {
 

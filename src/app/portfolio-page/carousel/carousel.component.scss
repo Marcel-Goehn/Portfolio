@@ -1,26 +1,104 @@
 @import '../../../variables.scss';
+@import '../../../mixins.scss';
 
 section {
-    padding-top: 11rem;
     background-color: $black;
+    padding-top: 9rem;
 }
 
 h3 {
-    text-align: center;
     color: $teal-dark;
+    text-align: center;
     font-weight: $font-weight-bold;
     font-size: $font-size-xxl;
+    padding-inline: 6rem;
 }
 
 .container {
-    display: flex;
+    margin-top: 3rem;
+    @include container();
+    padding-inline: 0;
 }
 
-.colleague {
-    display: flex;
+swiper-container {
+    width: 100%;
+    height: 362px;
 }
 
-.border {
-    border: 1px solid darken($white, 20%);
-    flex: 1;
+swiper-slide {
+    font-size: 18px;
+    // background: #444;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    height: 274px;
+    border-radius: 32px;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
+
+article {
+    height: 100%;
+    width: 100%;
+    background-color: $carousel-bg;
+    border: 1px solid $teal-dark;
+    border-radius: 32px;
+    padding: 2rem;
+}
+
+p {
+    color: $white;
+    font-weight: $font-weight-normal;
+    font-size: $font-size-lg;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    >div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1rem;
+    }
+}
+
+.line {
+    border-top: 1px solid $white;
+    height: 1px;
+    width: 100%;
+}
+
+.line~span {
+    white-space: nowrap;
+    color: $white;
+    font-size: $font-size-lg;
+    font-weight: $font-weight-normal;
+}
+
+.swiper-slide-active,
+.swiper-slide-active~swiper-slide {
+    transform: scale(0.92);
+}
+
+.swiper-slide-active+swiper-slide {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+    transform: scale(1);
+}
+
+swiper-container::part(bullet-active) {
+  background-color: $teal-dark;
+  margin: 0 10px;
+}
+
+swiper-container::part(bullet) {
+  background-color: $white;
+  opacity: 100%;
+  margin: 0 10px;
+}
+
+// swiper-container::part(button-prev) {
+//     left: 550px;
+//     top: 96%;
+// }
