@@ -4,11 +4,12 @@ import { AboutMeComponent } from "./about-me/about-me.component";
 import { TechnologiesComponent } from "./technologies/technologies.component";
 import { FeaturedProjectsComponent } from "./featured-projects/featured-projects.component";
 import { CarouselComponent } from "./carousel/carousel.component";
+import { ContactMeComponent } from "./contact-me/contact-me.component";
 
 @Component({
   selector: 'app-portfolio-page',
   standalone: true,
-  imports: [HeroComponent, AboutMeComponent, TechnologiesComponent, FeaturedProjectsComponent, CarouselComponent],
+  imports: [HeroComponent, AboutMeComponent, TechnologiesComponent, FeaturedProjectsComponent, CarouselComponent, ContactMeComponent],
   templateUrl: './portfolio-page.component.html',
   styleUrl: './portfolio-page.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,

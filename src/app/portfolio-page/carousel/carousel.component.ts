@@ -1,4 +1,4 @@
-import { Component, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { ChangeDetectionStrategy, Component, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
 @Component({
   selector: 'app-carousel',
@@ -7,6 +7,7 @@ import { Component, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
   templateUrl: './carousel.component.html',
   styleUrl: './carousel.component.scss',
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class CarouselComponent {
 

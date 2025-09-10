@@ -1,0 +1,133 @@
+@import '../../../variables.scss';
+@import '../../../mixins.scss';
+
+section {
+    background: $black;
+    padding-top: 9rem;
+}
+
+.container {
+    @include container();
+}
+
+.grid-container {
+    display: grid;
+    gap: 4rem;
+    grid-template-columns: 1fr 1.15fr;
+}
+
+h4 {
+    font-size: $font-size-xl;
+    font-weight: $font-weight-light-bold;
+    color: $teal-dark;
+}
+
+h3 {
+    font-size: $font-size-5xl;
+    font-weight: $font-weight-bold;
+    color: $teal-dark;
+    margin-top: 1.25rem;
+}
+
+h3+h4 {
+    font-weight: $font-weight-bold;
+    margin-top: 2.5rem;
+}
+
+p {
+    font-size: $font-size-base;
+    font-weight: $font-weight-normal;
+    color: $white;
+    margin-top: 1rem;
+
+    >span {
+        font-weight: $font-weight-bold;
+        color: $teal-dark;
+    }
+}
+
+.name-container,
+.email-container,
+.interest-container {
+    padding: 2rem;
+}
+
+.name-container,
+.interest-container {
+    border-block: 1px solid $line-divider;
+    @include dFlex($g: 1rem, $ai: flex-start);
+    flex-direction: column;
+
+    >label {
+        font-size: $font-size-xl;
+        font-weight: $font-weight-light-bold;
+        color: $teal-dark;
+    }
+
+    >input {
+        width: 100%;
+        font-size: $font-size-l;
+        color: $white;
+        font-weight: $font-weight-normal;
+        background-color: transparent;
+
+        &::placeholder {
+            font-size: $font-size-l;
+            color: $white;
+            font-weight: $font-weight-normal;
+        }
+    }
+}
+
+.email-container {
+    @include dFlex($g: 1rem, $ai: flex-start);
+    flex-direction: column;
+
+    >label {
+        font-size: $font-size-xl;
+        font-weight: $font-weight-light-bold;
+        color: $teal-dark;
+    }
+
+    >input {
+        width: 100%;
+        font-size: $font-size-l;
+        color: $white;
+        font-weight: $font-weight-normal;
+        background-color: transparent;
+
+        &::placeholder {
+            font-size: $font-size-l;
+            color: $white;
+            font-weight: $font-weight-normal;
+        }
+    }
+}
+
+.checkbox-container {
+    margin-top: 2.5rem;
+    @include dFlex($jc: flex-start, $g: 0.5rem);
+
+    >label {
+        font-size: $font-size-base;
+        font-weight: $font-weight-normal;
+        color: $white;
+
+        >span {
+            color: $teal-dark;
+        }
+    }
+
+    >input {
+        cursor: pointer;
+
+        &:hover {
+            background-color: blue
+        }
+    }
+}
+
+.btn-container {
+    @include dFlex();
+    margin-top: 1rem;
+}
