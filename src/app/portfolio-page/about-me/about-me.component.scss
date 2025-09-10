@@ -9,14 +9,12 @@ section {
     @include container();
 }
 
-.flex-container {
-    @include dFlex($jc: space-between, $g: 2.5rem, $ai: flex-start);
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 6rem;
     padding-top: 15.125rem;
     padding-bottom: 10.375rem;
-
-    >div {
-        flex: 1;
-    }
 }
 
 .image-container {
@@ -73,18 +71,26 @@ p {
 }
 
 @media (max-width: 1100px) {
-    .flex-container {
-        flex-direction: column;
-        padding-block: 6.25rem;
-    }
 
     .image-container {
         transform: translateY(0);
     }
 }
 
+@media (max-width: 1000px) {
+    .grid-container {
+        display: block;
+        padding-block: 6.25rem;
+    }
+
+    .image-container {
+        margin-bottom: 2.5rem;
+    }
+}
+
 @media (max-width: 768px) {
-    .flex-container {
-        align-items: center;
+    .image-container {
+        display: flex;
+        justify-content: center;
     }
 }
