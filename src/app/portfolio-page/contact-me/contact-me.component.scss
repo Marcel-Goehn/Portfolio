@@ -160,6 +160,21 @@ p {
     margin-top: 2.75rem;
 }
 
+.invalid-message {
+    color: $error;
+    font-size: $font-size-l;
+    font-weight: $font-weight-normal;
+    margin-top: 0;
+}
+
+.checkbox-container + p {
+    margin-top: 0.5rem;
+}
+
+.hideCheckBoxError {
+    opacity: 0;
+}
+
 @media (max-width: 835px) {
     section {
         padding-top: 6.25rem;
