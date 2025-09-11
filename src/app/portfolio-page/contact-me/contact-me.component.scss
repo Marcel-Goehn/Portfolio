@@ -161,6 +161,10 @@ p {
 }
 
 @media (max-width: 835px) {
+    section {
+        padding-top: 6.25rem;
+    }
+
     .grid-container {
         display: block;
 

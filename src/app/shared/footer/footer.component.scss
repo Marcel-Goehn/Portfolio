@@ -4,6 +4,7 @@
 footer {
     background: $black;
     padding-top: 8.438rem;
+    padding-bottom: 4rem;
 }
 
 .container {
@@ -15,14 +16,14 @@ footer {
 }
 
 .logo-footer-container {
-    > img {
+    >img {
         width: 132px;
         height: 48px;
         object-fit: cover;
         margin-bottom: 2rem;
     }
 
-    >img + p {
+    >img+p {
         margin-bottom: 0.5rem;
     }
 
@@ -45,10 +46,6 @@ footer {
     }
 }
 
-nav {
-    align-self: flex-end;
-}
-
 ul {
     display: flex;
     flex-direction: column;
@@ -60,4 +57,40 @@ li a {
     color: $white;
     font-size: $font-size-base;
     font-weight: $font-weight-normal;
+}
+
+#copyright_mobile {
+    @include dFlex($g: 0.5rem);
+    margin-top: 2rem;
+
+    >span {
+        color: $teal-dark;
+        font-size: $font-size-l;
+        font-weight: $font-weight-normal;
+    }
+}
+
+@media (max-width: 768px) {
+    footer {
+        padding-top: 6.25rem;
+        padding-bottom: 1.5rem;
+    }
+    
+    .flex-container {
+        align-items: flex-start;
+    }
+
+    #copyright_desktop {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) {
+    #copyright_mobile {
+        display: none;
+    }
+
+    nav {
+        align-self: flex-end;
+    }
 }
