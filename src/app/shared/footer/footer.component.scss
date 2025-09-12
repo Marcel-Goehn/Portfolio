@@ -1,10 +1,16 @@
 @import '../../../variables.scss';
 @import '../../../mixins.scss';
 
-footer {
+.bg-black {
     background: $black;
     padding-top: 8.438rem;
     padding-bottom: 4rem;
+}
+
+.bg-transparent {
+    background: transparent;
+    padding-top: 6.25rem;
+    padding-bottom: 5rem;
 }
 
 .container {
@@ -71,11 +77,16 @@ li a {
 }
 
 @media (max-width: 768px) {
-    footer {
+    .bg-black {
         padding-top: 6.25rem;
         padding-bottom: 1.5rem;
     }
-    
+
+    .bg-transparent {
+        padding-top: 5.25rem;
+        padding-bottom: 3.5;
+    }
+
     .flex-container {
         align-items: flex-start;
     }
