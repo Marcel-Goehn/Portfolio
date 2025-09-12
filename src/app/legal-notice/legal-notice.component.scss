@@ -8,6 +8,11 @@ section {
     background-position: center;
 }
 
+.back-btn {
+    padding-top: 5.438rem;
+    padding-inline: 0.5rem;
+}
+
 h1 {
     text-align: center;
     color: $teal-dark;
@@ -73,4 +78,30 @@ p {
 
 .design-owning, .date, .question {
     margin-top: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+        text-align: start;
+        color: $white;
+        padding-inline: 1rem;
+        padding-top: 2.5rem;
+    }
+
+    h3 {
+        font-size: 1rem;
+        margin-bottom: 0.25rem;
+    }
+
+    .imprint-header-h3 {
+        font-size: 1.5rem;
+        margin-top: 2rem;
+    }
+}
+
+@media (min-width: 769px) {
+    .back-btn {
+        display: none;
+    }
 }
