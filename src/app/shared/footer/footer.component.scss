@@ -63,6 +63,31 @@ li a {
     color: $white;
     font-size: $font-size-base;
     font-weight: $font-weight-normal;
+    transition: color 300ms ease-out;
+    position: relative;
+
+    &::before {
+        content: '';
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        color: $teal-dark;
+        background-color: $teal-dark;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: -14px;
+        transition: opacity 300ms ease-out;
+        opacity: 0;
+    }
+
+    &:hover {
+        color: $teal-dark;
+
+        &::before {
+            opacity: 1;
+        }
+    }
 }
 
 #copyright_mobile {
