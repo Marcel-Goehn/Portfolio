@@ -71,9 +71,13 @@ p {
         font-weight: $font-weight-normal;
         background-color: transparent;
 
+        &:hover::placeholder {
+            color: $white;
+        }
+
         &::placeholder {
             font-size: $font-size-l;
-            color: $white;
+            color: $grey-white;
             font-weight: $font-weight-normal;
         }
     }
@@ -96,9 +100,13 @@ p {
         font-weight: $font-weight-normal;
         background-color: transparent;
 
+        &:hover::placeholder {
+            color: $white;
+        }
+
         &::placeholder {
             font-size: $font-size-l;
-            color: $white;
+            color: $grey-white;
             font-weight: $font-weight-normal;
         }
     }
@@ -125,12 +133,19 @@ p {
         }
 
         &:hover::before {
-            background-color: $line-divider;
+            background-color: $turquoise-30;
         }
     }
 
     .privacy-highlight {
         color: $teal-dark;
+
+        &:hover {
+            color: $white;
+            text-decoration: underline;
+            text-underline-offset: 10px;
+            text-decoration-color: $teal-dark;
+        }
     }
 
     >input {
@@ -139,7 +154,8 @@ p {
         position: absolute;
 
         &:hover+label::before {
-            background-color: $line-divider;
+
+            background-color: $turquoise-30;
         }
 
         &:checked+label::before {
@@ -161,13 +177,20 @@ p {
 }
 
 .invalid-message {
+    color: $error-dark-red;
+    font-size: $font-size-l;
+    font-weight: $font-weight-normal;
+    margin-top: 0;
+}
+
+.invalid-privacy-policy-message {
     color: $error;
     font-size: $font-size-l;
     font-weight: $font-weight-normal;
     margin-top: 0;
 }
 
-.checkbox-container + p {
+.checkbox-container+p {
     margin-top: 0.5rem;
 }
 
