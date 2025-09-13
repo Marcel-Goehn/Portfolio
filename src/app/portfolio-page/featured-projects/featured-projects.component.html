@@ -7,6 +7,7 @@
             skills in action.</p>
         <div class="featured-projects">
             <div class="project-names">
+                @if (currentWindowWidth() >= 992) {
                 <div class="border-block project" (mouseenter)="toggleImage('one')" (mouseleave)="toggleImage('one')">
                     <div>
                         <span class="fira project-name">Join</span>
@@ -33,7 +34,8 @@
                         <span>JavaScript</span>
                     </div>
                 </div>
-                <div class="border-block project" (mouseenter)="toggleImage('three')" (mouseleave)="toggleImage('three')">
+                <div class="border-block project" (mouseenter)="toggleImage('three')"
+                    (mouseleave)="toggleImage('three')">
                     <div>
                         <span class="fira project-name">Pokedex</span>
                     </div>
@@ -45,10 +47,60 @@
                         <span>JavaScript</span>
                     </div>
                 </div>
+                } @else {
+                <div class="border-block project">
+                    <div>
+                        <span class="fira project-name">Join</span>
+                    </div>
+                    <div class="karla technologies">
+                        <span>HTML</span>
+                        <div></div>
+                        <span>CSS</span>
+                        <div></div>
+                        <span>JavaScript</span>
+                        <div></div>
+                        <span>Firebase</span>
+                    </div>
+                </div>
+                <div class="project">
+                    <div>
+                        <span class="fira project-name">El Pollo Loco</span>
+                    </div>
+                    <div class="karla technologies">
+                        <span>HTML</span>
+                        <div></div>
+                        <span>CSS</span>
+                        <div></div>
+                        <span>JavaScript</span>
+                    </div>
+                </div>
+                <div class="border-block project">
+                    <div>
+                        <span class="fira project-name">Pokedex</span>
+                    </div>
+                    <div class="karla technologies">
+                        <span>HTML</span>
+                        <div></div>
+                        <span>CSS</span>
+                        <div></div>
+                        <span>JavaScript</span>
+                    </div>
+                </div>
+                }
             </div>
-            <img [ngClass]="{ 'd_none' : !projectOneIsHovered() }" id="project-one" src="assets/img/featured-projects/join.png" alt="My Join kanban board for tracking tasks">
-            <img [ngClass]="{ 'd_none' : !projectTwoIsHovered() }" id="project-two" src="assets/img/featured-projects/el-pollo-loco.png" alt="A screenshot of Pepe, the character of El-Pollo-Loco">
-            <img [ngClass]="{ 'd_none' : !projectThreeIsHovered() }" id="project-three" src="assets/img/featured-projects/da-bubble.png" alt="A screenshot of my Slack clone">
+            <div id="project-one" [ngClass]="{ 'd_none' : !projectOneIsHovered() }">
+                <img class="fp-1" src="assets/img/featured-projects/join.png" alt="My Join kanban board for tracking tasks">
+                <img class="capa" src="assets/img/featured-projects/Capa_1.svg">
+            </div>
+            <div id="project-two" [ngClass]="{ 'd_none' : !projectTwoIsHovered() }">
+                <img class="fp-2" src="assets/img/featured-projects/el-pollo-loco.png"
+                    alt="A screenshot of Pepe, the character of El-Pollo-Loco">
+                <img class="capa" src="assets/img/featured-projects/Capa_1.svg">
+            </div>
+            <div id="project-three" [ngClass]="{ 'd_none' : !projectThreeIsHovered() }">
+                <img class="fp-3" src="assets/img/featured-projects/da-bubble.png" alt="A screenshot of my Slack clone">
+                <img class="capa" src="assets/img/featured-projects/Capa_1.svg">
+            </div>
         </div>
     </div>
 </section>

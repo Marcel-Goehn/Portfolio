@@ -14,6 +14,10 @@ section {
     display: none;
 }
 
+.o_none {
+    opacity: 0;
+}
+
 h4 {
     font-weight: $font-weight-bold;
     font-size: $font-size-xl;
@@ -35,8 +39,8 @@ h3 {
 }
 
 .featured-projects {
-    @include dFlex($jc: space-between);
-    margin-top: 2.563rem;
+    @include dFlex($jc: space-between, $g: 4.5rem);
+    margin-top: 2.5rem;
 }
 
 .project-names {
@@ -49,14 +53,14 @@ h3 {
 }
 
 .project {
-    @include dFlex($jc: space-between);
+    @include dFlex($jc: space-between, $g: 10px);
     padding: 2.5rem 2rem;
     cursor: pointer;
     transition: background-color 150ms ease-in;
 }
 
 .project:hover {
-    background-color: $fetaured-projects-bg;
+    background-color: $turquoise-30;
 }
 
 .project-name {
@@ -65,16 +69,47 @@ h3 {
     color: $white;
 }
 
+#project-one, #project-two, #project-three {
+    width: 295px;
+    height: 192px;
+    position: relative;
+}
+
 #project-one {
     align-self: flex-start;
+}
+
+.fp-1, .fp-2, .fp-3 {
+    z-index: 2;
+}
+
+.fp-1 {
+    position: absolute;
+    top: 0;
 }
 
 #project-two {
     align-self: center;
 }
 
+.fp-2 {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
 #project-three {
     align-self: flex-end;
+}
+
+.fp-3 {
+    position: absolute;
+    bottom: 0;
+}
+
+.capa {
+    transform: translate(23px, 20px);
+    z-index: 1;
 }
 
 .technologies {
@@ -89,5 +124,38 @@ h3 {
         font-weight: $font-weight-normal;
         color: $white;
         font-size: $font-size-l;
+    }
+}
+
+@media (max-width: 991px) {
+    .project-names {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    section {
+        padding-top: 6.25rem;
+    }
+
+    h3 {
+        margin-top: 1rem;
+    }
+
+    .explore-paragraph {
+        margin-top: 2rem;
+    }
+}
+
+@media (max-width: 450px) {
+    .project {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 2rem 0;
+    }
+
+    .technologies {
+        flex-wrap: wrap;
+        justify-content: flex-start;
     }
 }

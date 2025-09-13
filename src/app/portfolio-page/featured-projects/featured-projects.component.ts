@@ -1,5 +1,5 @@
 import { NgClass } from '@angular/common';
-import { ChangeDetectionStrategy, Component, signal } from '@angular/core';
+import { ChangeDetectionStrategy, Component, input, signal } from '@angular/core';
 import { DialogComponent } from "../../shared/dialog/dialog.component";
 
 @Component({
@@ -11,6 +11,7 @@ import { DialogComponent } from "../../shared/dialog/dialog.component";
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class FeaturedProjectsComponent {
+  currentWindowWidth = input.required<number>()
   projectOneIsHovered = signal(false);
   projectTwoIsHovered = signal(false);
   projectThreeIsHovered = signal(false);
@@ -24,5 +25,5 @@ export class FeaturedProjectsComponent {
     } else {
       this.projectThreeIsHovered.set(!this.projectThreeIsHovered())
     }
-  };
+  }
 }
