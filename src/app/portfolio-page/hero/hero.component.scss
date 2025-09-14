@@ -7,6 +7,7 @@ section {
     background-repeat: no-repeat;
     background-size: cover;
     height: 100dvh;
+    position: relative;
 }
 
 .container {
@@ -43,21 +44,6 @@ h1 {
 .link-btns-container {
     @include dFlex($g: 3rem);
 }
-
-// .navigate-to-links {
-//     color: $white;
-//     border: 1px solid $white;
-//     border-radius: 100px;
-//     padding: 0.813rem 1.5rem;
-//     font-weight: $font-weight-normal;
-//     font-size: $font-size-l;
-//     transition: border-color 300ms ease-out, color 300ms ease-out;
-
-//     &:hover {
-//         border-color: $teal-dark;
-//         color: $teal-dark;
-//     }
-// }
 
 .email-link {
     color: $white;
@@ -131,23 +117,19 @@ h1 {
     transform: translateY(-50%);
 }
 
-
 @keyframes arrow-bounce {
-    0% {
+    0% {}
 
-    }
     100% {
         transform: translateY(10px);
     }
 }
 
 @media (max-width: 576px) {
-    // .navigate-to-links {
-    //     padding: 0.625rem 0.625rem;
-    // }
     .bottom-nav-border {
         height: 180px;
     }
+
     .bottom-social-border {
         height: 80px;
     }
@@ -157,6 +139,7 @@ h1 {
     .bottom-nav-border {
         height: 100px;
     }
+
     .bottom-social-border {
         height: 10px;
     }

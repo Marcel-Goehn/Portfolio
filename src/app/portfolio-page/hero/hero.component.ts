@@ -29,5 +29,5 @@ export class HeroComponent {
 
   changeMailHoverState(bool: boolean) {
     this.mailIsHovered.set(bool);
-  }
+  }    
 }
