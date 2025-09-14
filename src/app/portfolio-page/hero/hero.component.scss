@@ -99,6 +99,10 @@ h1 {
 .social-media-icons-container {
     @include dFlex($g: 0.75rem);
     flex-direction: column;
+
+    >a {
+        position: relative;
+    }
 }
 
 .bottom-social-border {
@@ -114,6 +118,19 @@ h1 {
     animation-iteration-count: infinite;
     animation-direction: alternate;
 }
+
+.after-dot::before {
+    content: '';
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: $teal-dark;
+    position: absolute;
+    top: 50%;
+    right: -15px;
+    transform: translateY(-50%);
+}
+
 
 @keyframes arrow-bounce {
     0% {

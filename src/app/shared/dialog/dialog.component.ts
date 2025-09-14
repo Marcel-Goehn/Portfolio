@@ -1,4 +1,4 @@
-import { Component, ElementRef, viewChild } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, viewChild } from '@angular/core';
 import { ButtonComponent } from "../button/button.component";
 
 @Component({
@@ -8,11 +8,13 @@ import { ButtonComponent } from "../button/button.component";
   templateUrl: './dialog.component.html',
   styleUrl: './dialog.component.scss'
 })
-export class DialogComponent {
+export class DialogComponent implements AfterViewInit{
    private dialogEl = viewChild.required<ElementRef<HTMLDialogElement>>('dialog');
 
-   
-  closeDialog() {
-    this.dialogEl().nativeElement.close();
+
+  ngAfterViewInit(): void {
+    // this.dialogEl().nativeElement.showModal();
   }
+
+
 }

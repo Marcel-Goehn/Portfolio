@@ -1,12 +1,13 @@
-import { ChangeDetectionStrategy, Component, signal } from '@angular/core';
-import { CommonModule, NgStyle } from '@angular/common';
+import { ChangeDetectionStrategy, Component, input, signal } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from "./shared/header/header.component";
+import { DialogComponent } from './shared/dialog/dialog.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, HeaderComponent, NgStyle],
+  imports: [CommonModule, RouterOutlet, HeaderComponent, DialogComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
