@@ -12,7 +12,7 @@
             </article>
 
             <div>
-                <form [formGroup]="form" (ngSubmit)="onSubmit()" autocomplete="off">
+                <form [formGroup]="form" (ngSubmit)="onSubmit()">
                     <div class="name-container" (click)="removeValidationError('name')">
                         <label class="fira" for="name">What's your name?</label>
                         @if (!enteredNameInvalid()) {
