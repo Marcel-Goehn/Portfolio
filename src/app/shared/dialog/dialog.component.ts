@@ -1,5 +1,6 @@
-import { AfterViewInit, Component, ElementRef, viewChild } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, inject, viewChild } from '@angular/core';
 import { ButtonComponent } from "../button/button.component";
+import { DialogService } from '../../dialog.service';
 
 @Component({
   selector: 'app-dialog',
@@ -10,11 +11,22 @@ import { ButtonComponent } from "../button/button.component";
 })
 export class DialogComponent implements AfterViewInit{
    private dialogEl = viewChild.required<ElementRef<HTMLDialogElement>>('dialog');
+   private dialogService = inject(DialogService);
+   data = this.dialogService.dialogData;
+   index = this.dialogService.index;
 
 
   ngAfterViewInit(): void {
-    // this.dialogEl().nativeElement.showModal();
+    this.dialogEl().nativeElement.showModal();
   }
 
 
+  incrementIndex() {
+    this.dialogService.incrementIndex();
+  }
+
+
+  closeDialog() {
+    this.dialogService.dialogOpened.set(false);
+  }
 }

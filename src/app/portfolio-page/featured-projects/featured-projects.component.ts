@@ -1,5 +1,6 @@
 import { NgClass } from '@angular/common';
-import { ChangeDetectionStrategy, Component, input, signal } from '@angular/core';
+import { ChangeDetectionStrategy, Component, inject, input, signal } from '@angular/core';
+import { DialogService } from '../../dialog.service';
 
 @Component({
   selector: 'app-featured-projects',
@@ -10,6 +11,7 @@ import { ChangeDetectionStrategy, Component, input, signal } from '@angular/core
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class FeaturedProjectsComponent {
+  private dialogService = inject(DialogService);
   currentWindowWidth = input.required<number>()
   projectOneIsHovered = signal(false);
   projectTwoIsHovered = signal(false);
@@ -24,5 +26,10 @@ export class FeaturedProjectsComponent {
     } else {
       this.projectThreeIsHovered.set(!this.projectThreeIsHovered())
     }
+  }
+
+  openDialog(i: number) {
+    this.dialogService.changeIndex(i);
+    this.dialogService.dialogOpened.set(true);
   }
 }

@@ -7,7 +7,7 @@
         <div class="featured-projects">
             <div class="project-names">
                 @if (currentWindowWidth() >= 992) {
-                <div class="border-block project" (mouseenter)="toggleImage('one')" (mouseleave)="toggleImage('one')">
+                <div (click)="openDialog(0)" class="border-block project" (mouseenter)="toggleImage('one')" (mouseleave)="toggleImage('one')">
                     <div>
                         <span class="fira project-name">Join</span>
                     </div>
@@ -21,7 +21,7 @@
                         <span>Firebase</span>
                     </div>
                 </div>
-                <div class="project" (mouseenter)="toggleImage('two')" (mouseleave)="toggleImage('two')">
+                <div (click)="openDialog(1)" class="project" (mouseenter)="toggleImage('two')" (mouseleave)="toggleImage('two')">
                     <div>
                         <span class="fira project-name">El Pollo Loco</span>
                     </div>
@@ -33,7 +33,7 @@
                         <span>JavaScript</span>
                     </div>
                 </div>
-                <div class="border-block project" (mouseenter)="toggleImage('three')"
+                <div (click)="openDialog(2)" class="border-block project" (mouseenter)="toggleImage('three')"
                     (mouseleave)="toggleImage('three')">
                     <div>
                         <span class="fira project-name">Pokedex</span>

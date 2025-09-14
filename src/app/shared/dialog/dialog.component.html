@@ -1,6 +1,5 @@
 <dialog #dialog>
-    <svg class="close-btn" xmlns="http://www.w3.org/2000/svg" width="48" height="48"
-        viewBox="0 0 48 48" fill="none">
+    <svg (click)="closeDialog()" class="close-btn" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
         <mask id="mask0_3001_2616" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="48"
             height="48">
             <rect width="48" height="48" fill="white" />
@@ -14,19 +13,19 @@
     <div class="wrapper">
         <div class="grid-container">
             <div class="project-information">
-                <h2 class="karla">01</h2>
-                <h3 class="fira">Join</h3>
+                <h2 class="karla">{{ data()[index()].id }}</h2>
+                <h3 class="fira">{{ data()[index()].title }}</h3>
                 <h4 class="fira">What is this project about?</h4>
-                <p class="karla">Task manager inspired by the Kanban System. Create and organize tasks using drag and
-                    drop function, assign users and categories.</p>
+                <p class="karla">{{ data()[index()].information }}</p>
                 <div class="used-skills">
-                    <img src="assets/img/dialog/CSS.svg" alt="Used skill CSS">
-                    <img src="assets/img/dialog/HTML.svg" alt="Used skill HTML">
-                    <img src="assets/img/dialog/Firebase.svg" alt="Used Firebase for backend as a service">
-                    <img src="assets/img/dialog/JavaScript.svg" alt="Used skill JavaScript">
+                    @for (skill of data()[index()].usedTech; track $index) {
+                        <img [src]="'assets/img/dialog/' + skill + '.svg'" [alt]="'Used skill' + skill">
+                    } @empty {
+                        <p>No skills have been used.</p>
+                    }
                 </div>
                 <div class="button-links">
-                    <a class="karla" href="" appButton>
+                    <a class="karla" [href]="data()[index()].github" target="_blank" appButton>
                         <span>Github</span>
                         <img src="assets/img/dialog/arrow_outward.svg" alt="Arrow SVG">
                     </a>
@@ -37,11 +36,11 @@
                 </div>
             </div>
             <figure class="header-img">
-                <img src="assets/img/dialog/join.png" alt="Screenshot from my Join kanban board project">
+                <img [src]="data()[index()].snapshot" alt="Screenshot from my Join kanban board project">
             </figure>
         </div>
     </div>
-    <div class="next-project-container">
+    <div (click)="incrementIndex()" class="next-project-container">
         <span class="karla">Next project</span>
         <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
             <mask id="mask0_64219_863" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="4" width="32"

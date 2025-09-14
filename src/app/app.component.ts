@@ -1,8 +1,9 @@
-import { ChangeDetectionStrategy, Component, input, signal } from '@angular/core';
+import { ChangeDetectionStrategy, Component, inject, input, signal } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from "./shared/header/header.component";
 import { DialogComponent } from './shared/dialog/dialog.component';
+import { DialogService } from './dialog.service';
 
 @Component({
   selector: 'app-root',
@@ -16,13 +17,14 @@ import { DialogComponent } from './shared/dialog/dialog.component';
   }
 })
 export class AppComponent {
+  private dialogService = inject(DialogService);
   topPosition = signal<number | null>(null);
   leftPosition = signal<number | null>(null);
+  showDialog = this.dialogService.dialogOpened;
 
 
   calculateMouseShadow(e: MouseEvent) {
     this.topPosition.set(e.clientY);
     this.leftPosition.set(e.clientX);
   }
-
 }
