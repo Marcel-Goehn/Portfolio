@@ -8,7 +8,7 @@ import { type dialogData } from './dialog.model';
 export class DialogService {
   dialogOpened = signal(false);
   index = signal(0);
-  dialogData = signal<dialogData[]>([
+  private dialogData = signal<dialogData[]>([
     {
       id: 1,
       title: 'Join',
@@ -34,6 +34,7 @@ export class DialogService {
       github: 'https://github.com/Marcel-Goehn/pokedex'
     }
   ]);
+  dialogData$ = this.dialogData.asReadonly();
 
 
   changeIndex(i: number) {
@@ -43,6 +44,6 @@ export class DialogService {
 
   incrementIndex() {
     debugger;
-    this.index.update((num) => num++ % this.dialogData().length);
+    this.index.update((num) => (num + 1) % this.dialogData().length);
   }
 }

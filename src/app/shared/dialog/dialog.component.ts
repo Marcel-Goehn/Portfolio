@@ -12,7 +12,7 @@ import { DialogService } from '../../dialog.service';
 export class DialogComponent implements AfterViewInit{
    private dialogEl = viewChild.required<ElementRef<HTMLDialogElement>>('dialog');
    private dialogService = inject(DialogService);
-   data = this.dialogService.dialogData;
+   data = this.dialogService.dialogData$;
    index = this.dialogService.index;
 
 
