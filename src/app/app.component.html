@@ -1,8 +1,5 @@
 <app-header></app-header>
 <main>
-    @if (showDialog()) {
-    <app-dialog />
-    }
     <router-outlet></router-outlet>
 </main>
 <div id="cursor" [style.top.px]="topPosition()" [style.left.px]="leftPosition()"></div>
