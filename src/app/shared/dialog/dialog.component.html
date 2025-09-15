@@ -15,7 +15,7 @@
         <div class="wrapper">
             <div class="grid-container">
                 <div class="project-information">
-                    <h2 class="karla">{{ data()[index()].id }}</h2>
+                    <h2 class="karla">{{ data()[index()].id | padStart }}</h2>
                     <h3 class="fira">{{ data()[index()].title }}</h3>
                     <h4 class="fira">What is this project about?</h4>
                     <p class="karla">{{ data()[index()].information }}</p>

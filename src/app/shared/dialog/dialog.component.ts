@@ -1,12 +1,12 @@
 import { AfterViewInit, Component, ElementRef, inject, viewChild } from '@angular/core';
 import { ButtonComponent } from "../button/button.component";
 import { DialogService } from '../../dialog.service';
-import { DecimalPipe } from '@angular/common';
+import { PadStart } from './pad-start.pipe';
 
 @Component({
   selector: 'app-dialog',
   standalone: true,
-  imports: [ButtonComponent],
+  imports: [ButtonComponent, PadStart],
   templateUrl: './dialog.component.html',
   styleUrl: './dialog.component.scss'
 })

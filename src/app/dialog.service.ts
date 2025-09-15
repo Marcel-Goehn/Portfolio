@@ -43,7 +43,6 @@ export class DialogService {
 
 
   incrementIndex() {
-    debugger;
     this.index.update((num) => (num + 1) % this.dialogData().length);
   }
 }
