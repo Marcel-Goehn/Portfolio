@@ -1,6 +1,7 @@
-import { ChangeDetectionStrategy, Component, signal } from '@angular/core';
+import { ChangeDetectionStrategy, Component, inject, signal } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterLink } from '@angular/router';
+import { HeaderService } from './header.service';
 
 @Component({
   selector: 'app-header',
@@ -14,13 +15,16 @@ import { RouterLink } from '@angular/router';
   }
 })
 export class HeaderComponent {
+  private headerService = inject(HeaderService);
+  aboutMeIsClicked = this.headerService.aboutmeIsClicked$;
+  skillIsClicked = this.headerService.skillIsClicked$;
+  projectsIsClicked = this.headerService.projectIsClicked$;
+
   english = signal(true);
   german = signal(false);
-  aboutMeIsClicked = signal(false);
-  skillsIsClicked = signal(false);
-  projectsIsClicked = signal(false);
   currentWindowWidth = signal(window.innerWidth);
   burgerMenuOpen = signal(false);
+
 
   changeLanguage() {
     this.english.set(!this.english());
@@ -28,10 +32,8 @@ export class HeaderComponent {
   }
 
 
-  changeActiveNavLink(booleanOne: boolean, booleanTwo: boolean, booleanThree: boolean) {
-    this.aboutMeIsClicked.set(booleanOne);
-    this.skillsIsClicked.set(booleanTwo);
-    this.projectsIsClicked.set(booleanThree);
+  changeActiveNavLink(boolOne: boolean, boolTwo: boolean, boolThree: boolean) {
+    this.headerService.changeActiveNavLink(boolOne, boolTwo, boolThree);
   }
 
 

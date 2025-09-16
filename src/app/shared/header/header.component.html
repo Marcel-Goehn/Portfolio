@@ -12,7 +12,7 @@
                 <li><a [routerLink]="['/']" fragment="about-me" (click)="changeActiveNavLink(true, false, false)"
                         [ngClass]="{'focused-link' : aboutMeIsClicked()}" class="fira">About me</a></li>
                 <li><a [routerLink]="['/']" fragment="skills" (click)="changeActiveNavLink(false, true, false)"
-                        [ngClass]="{'focused-link' : skillsIsClicked()}" class="fira">Skills</a></li>
+                        [ngClass]="{'focused-link' : skillIsClicked()}" class="fira">Skills</a></li>
                 <li><a [routerLink]="['/']" fragment="projects" (click)="changeActiveNavLink(false, false, true)"
                         [ngClass]="{'focused-link' : projectsIsClicked()}" class="fira">Projects</a></li>
             </ul>

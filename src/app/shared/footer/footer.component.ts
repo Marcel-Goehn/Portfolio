@@ -1,18 +1,21 @@
 import { NgClass } from '@angular/common';
 import { ChangeDetectionStrategy, Component, DestroyRef, inject, OnInit, signal } from '@angular/core';
-import { ActivatedRoute, RouterLink } from "@angular/router";
+import { ActivatedRoute, Router } from "@angular/router";
+import { HeaderService } from '../header/header.service';
 
 @Component({
   selector: 'app-footer',
   standalone: true,
-  imports: [RouterLink, NgClass],
+  imports: [NgClass],
   templateUrl: './footer.component.html',
   styleUrl: './footer.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class FooterComponent implements OnInit {
   private activatedRoute = inject(ActivatedRoute);
+  private router = inject(Router);
   private destroyRef = inject(DestroyRef);
+  private headerService = inject(HeaderService);
   currentUrl = signal('');
 
   ngOnInit(): void {
@@ -25,5 +28,11 @@ export class FooterComponent implements OnInit {
       }
     })
     this.destroyRef.onDestroy(() => subscription.unsubscribe());
+  }
+
+
+  resetActiveHeaderLinks() {
+    this.headerService.resetActiveHeaderLinks();
+    this.router.navigate(['/legal-notice']);
   }
 }
