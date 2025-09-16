@@ -34,7 +34,7 @@ export class ContactMeComponent implements OnInit {
       validators: [Validators.required]
     }),
     email: new FormControl("", {
-      validators: [Validators.email, Validators.required]
+      validators: [Validators.email, Validators.required, Validators.pattern('[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}')]
     }),
     message: new FormControl("", {
       validators: [Validators.required]

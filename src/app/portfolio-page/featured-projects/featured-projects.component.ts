@@ -1,7 +1,7 @@
 import { NgClass } from '@angular/common';
 import { ChangeDetectionStrategy, Component, inject, input, signal } from '@angular/core';
-import { DialogService } from '../../dialog.service';
-import { DialogComponent } from "../../shared/dialog/dialog.component";
+import { DialogService } from './dialog/dialog.service';
+import { DialogComponent } from "./dialog/dialog.component";
 
 @Component({
   selector: 'app-featured-projects',

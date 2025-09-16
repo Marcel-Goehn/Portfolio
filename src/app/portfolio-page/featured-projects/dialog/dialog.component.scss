@@ -1,5 +1,5 @@
-@import '../../../variables.scss';
-@import '../../../mixins.scss';
+@import '../../../../variables.scss';
+@import '../../../../mixins.scss';
 
 dialog::backdrop {
     background-color: rgba(0, 0, 0, 0.5);
@@ -10,7 +10,7 @@ dialog {
     outline: none;
     border: 1px solid $teal-dark;
     border-radius: 30px;
-    background-image: url(../../../assets/img/hero-section/hero-bg.png);
+    background-image: url(../../../../assets/img/hero-section/hero-bg.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

@@ -1,6 +1,6 @@
 import { AfterViewInit, Component, ElementRef, inject, viewChild } from '@angular/core';
-import { ButtonComponent } from "../button/button.component";
-import { DialogService } from '../../dialog.service';
+import { ButtonComponent } from "../../../shared/button/button.component";
+import { DialogService } from './dialog.service';
 import { PadStart } from './pad-start.pipe';
 
 @Component({
