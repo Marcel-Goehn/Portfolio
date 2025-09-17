@@ -1,3 +1,5 @@
+@import './variables.scss';
+
 *:not(dialog) {
     margin: 0;
     padding: 0;
@@ -8,6 +10,16 @@
 html {
     scroll-behavior: smooth;
     height: 100%;
+
+    &::-webkit-scrollbar-thumb {
+        background: $teal-dark;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: lighten($black, 5%);
+    }
+
+    scrollbar-color: $teal-dark lighten($black, 5%);
 }
 
 body {
