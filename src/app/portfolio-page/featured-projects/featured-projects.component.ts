@@ -31,7 +31,7 @@ export class FeaturedProjectsComponent {
   }
 
   openDialog(i: number) {
-    this.dialogService.changeIndex(i);
+    this.dialogService.onChangeIndex(i);
     this.dialogService.dialogOpened.set(true);
   }
 }

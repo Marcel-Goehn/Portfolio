@@ -8,7 +8,10 @@ import { PadStart } from './pad-start.pipe';
   standalone: true,
   imports: [ButtonComponent, PadStart],
   templateUrl: './dialog.component.html',
-  styleUrl: './dialog.component.scss'
+  styleUrl: './dialog.component.scss',
+  host: {
+    '(click)': 'onBackdropClose($event)'
+  }
 })
 export class DialogComponent implements AfterViewInit {
   private dialogEl = viewChild.required<ElementRef<HTMLDialogElement>>('dialog');
@@ -22,12 +25,19 @@ export class DialogComponent implements AfterViewInit {
   }
 
 
-  incrementIndex() {
-    this.dialogService.incrementIndex();
+  onIncrementIndex() {
+    this.dialogService.onIncrementIndex();
   }
 
 
-  closeDialog() {
+  onBackdropClose(e: MouseEvent) {
+    if(e.target === this.dialogEl().nativeElement) {
+      this.onCloseDialog();
+    }
+  }
+
+
+  onCloseDialog() {
     this.dialogService.dialogOpened.set(false);
   }
 }

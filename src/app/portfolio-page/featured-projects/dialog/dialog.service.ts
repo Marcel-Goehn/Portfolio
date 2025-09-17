@@ -37,12 +37,12 @@ export class DialogService {
   dialogData$ = this.dialogData.asReadonly();
 
 
-  changeIndex(i: number) {
+  onChangeIndex(i: number) {
     this.index.set(i);
   }
 
 
-  incrementIndex() {
+  onIncrementIndex() {
     this.index.update((num) => (num + 1) % this.dialogData().length);
   }
 }
