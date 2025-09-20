@@ -4,14 +4,15 @@
         <div class="grid-container">
             <app-card class="skill-set-container">
                 <h3 class="fira">Skill Set</h3>
-                <p class="skill-introduction karla">A short introduction of your skills. Highlight your experience of
-                    using different front-end
-                    technologies and emphasise your openness to learning and adapting to new technologies. Show how
-                    important it is for you to keep up with the rapid changes in web development.</p>
+                <p class="skill-introduction karla">I create modern, user-friendly web apps with HTML, CSS, and
+                    JavaScript, strengthened by TypeScript and Angular.
+                    Using Material Design, Git, Firebase, and REST APIs, I build clean, scalable solutions.
+                    With Scrum experience and a strong growth mindset, I keep learning and adapt quickly to new
+                    technologies.</p>
                 <p class="skill-question fira">You need <span class="fira">another skill?</span></p>
                 <p class="karla contact-paragraph">Feel free to contact me. I look forward to expanding on my previous
                     knowledge.</p>
-                <button appButton class="karla navigate-to-link">
+                <button [routerLink]="['/']" fragment="contact" appButton class="karla navigate-to-link">
                     <div class="wrapper karla">
                         Let's Talk
                     </div>
