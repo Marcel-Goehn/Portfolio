@@ -11,7 +11,11 @@
                 <p class="skill-question fira">You need <span class="fira">another skill?</span></p>
                 <p class="karla contact-paragraph">Feel free to contact me. I look forward to expanding on my previous
                     knowledge.</p>
-                <button appButton class="karla">Let's Talk</button>
+                <button appButton class="karla navigate-to-link">
+                    <div class="wrapper karla">
+                        Let's Talk
+                    </div>
+                </button>
             </app-card>
             <div class="skill-icons-container">
                 @for (skill of skills(); track $index) {
