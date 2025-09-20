@@ -21,6 +21,11 @@ section {
     transform: translateY(-98px);
 }
 
+.profile-img {
+    border-radius: 30px;
+    filter: grayscale(0.9);
+}
+
 .grid-img-container {
     position: relative;
 }
