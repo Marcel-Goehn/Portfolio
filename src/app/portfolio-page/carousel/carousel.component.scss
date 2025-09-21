@@ -20,48 +20,79 @@ h3 {
     padding-inline: 0;
 }
 
-swiper-container {
+.wrapper {
+    max-width: 100%;
     width: 100%;
-    height: 362px;
+    position: relative;
 }
 
-swiper-slide {
-    font-size: 18px;
-    // background: #444;
-    // display: flex;
-    // justify-content: center;
-    // align-items: center;
-    height: 274px;
-    border-radius: 32px;
-    transition: box-shadow 0.3s ease, transform 0.3s ease;
+.wrapper button {
+    background: transparent;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
-article {
-    height: 100%;
-    width: 100%;
+.wrapper button:first-child {
+    left: -22px;
+}
+
+.wrapper button:last-child {
+    right: -22px;
+}
+
+.carousel {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: calc((100% / 3) - 12px);
+    gap: 16px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+}
+
+.carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.carousel :where(.card) {
+    @include dFlex();
+}
+
+.carousel.no-transition {
+    scroll-behavior: auto;
+}
+
+.carousel.dragging {
+    scroll-snap-type: none;
+    scroll-behavior: auto;
+}
+
+.carousel.dragging .card {
+    cursor: grab;
+    user-select: none;
+}
+
+.carousel .card {
+    scroll-snap-align: start;
     background-color: $carousel-bg;
     border: 1px solid $teal-dark;
     border-radius: 32px;
     padding: 2rem;
+    @include dFlex($jc: space-between);
+    flex-direction: column;
+    height: 274px;
+
+    >div {
+        @include dFlex($jc: space-between, $g: 1rem);
+    }
 }
 
 p {
     color: $white;
     font-weight: $font-weight-normal;
     font-size: $font-size-lg;
-}
-
-article {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-
-    >div {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        gap: 1rem;
-    }
 }
 
 .line {
@@ -76,29 +107,3 @@ article {
     font-size: $font-size-lg;
     font-weight: $font-weight-normal;
 }
-
-.swiper-slide-active,
-.swiper-slide-active~swiper-slide {
-    transform: scale(0.92);
-}
-
-.swiper-slide-active+swiper-slide {
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
-    transform: scale(1);
-}
-
-swiper-container::part(bullet-active) {
-  background-color: $teal-dark;
-  margin: 0 10px;
-}
-
-swiper-container::part(bullet) {
-  background-color: $white;
-  opacity: 100%;
-  margin: 0 10px;
-}
-
-// swiper-container::part(button-prev) {
-//     left: 550px;
-//     top: 96%;
-// }

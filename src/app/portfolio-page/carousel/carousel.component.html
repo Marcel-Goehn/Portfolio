@@ -1,67 +1,53 @@
 <section>
     <h3 class="fira">What my colleagues say about me</h3>
     <div class="container">
-        <swiper-container class="mySwiper" pagination="true" pagination-clickable="true" navigation="true" loop="true" space-between="30" slides-per-view="3" slide-to-clicked-slide="false" allow-touch-move="false">
-            <swiper-slide>
-                <article>
-                    <p class="karla">Marcel has proven to be a reliable group partner. His technical skills and
-                        proactive approach were crucial to the success of our</p>
-                    <div>
-                        <div class="line"></div>
-                        <span class="karla">H. Janisch - Team Partner</span>
-                    </div>
-                </article>
-            </swiper-slide>
-            <swiper-slide>
-                <article>
-                    <p class="karla">Marcel has proven to be a reliable group partner. His technical skills and
-                        proactive approach were crucial to the success of our</p>
-                    <div>
-                        <div class="line"></div>
-                        <span class="karla">H. Janisch - Team Partner</span>
-                    </div>
-                </article>
-            </swiper-slide>
-            <swiper-slide>
-                <article>
-                    <p class="karla">Marcel has proven to be a reliable group partner. His technical skills and
-                        proactive approach were crucial to the success of our</p>
-                    <div>
-                        <div class="line"></div>
-                        <span class="karla">H. Janisch - Team Partner</span>
-                    </div>
-                </article>
-            </swiper-slide>
-            <swiper-slide>
-                <article>
-                    <p class="karla">Marcel has proven to be a reliable group partner. His technical skills and
-                        proactive approach were crucial to the success of our</p>
-                    <div>
-                        <div class="line"></div>
-                        <span class="karla">H. Janisch - Team Partner</span>
-                    </div>
-                </article>
-            </swiper-slide>
-            <swiper-slide>
-                <article>
-                    <p class="karla">Marcel has proven to be a reliable group partner. His technical skills and
-                        proactive approach were crucial to the success of our</p>
-                    <div>
-                        <div class="line"></div>
-                        <span class="karla">H. Janisch - Team Partner</span>
-                    </div>
-                </article>
-            </swiper-slide>
-            <swiper-slide>
-                <article>
-                    <p class="karla">Marcel has proven to be a reliable group partner. His technical skills and
-                        proactive approach were crucial to the success of our</p>
-                    <div>
-                        <div class="line"></div>
-                        <span class="karla">H. Janisch - Team Partner</span>
-                    </div>
-                </article>
-            </swiper-slide>
-        </swiper-container>
+
+        <div class="wrapper">
+            <button (click)="buttonScroll('left')">
+                <img src="assets/img/carousel/back-arrow.svg" alt="Back button to get to the last testimonial">
+            </button>
+            <ul (mousedown)="dragStart($event)" (mousemove)="dragging($event)" (scroll)="infiniteScroll()"
+                class="carousel" #carousel [ngClass]="
+                {
+                    'dragging' : isDragging(),
+                    'no-transition' : noTransition()
+                }">
+                <li>
+                    <article class="card" #card>
+                        <p class="karla">Marcel has proven to be a reliable group partner. His technical skills and
+                            proactive approach were crucial to the success of our</p>
+                        <div>
+                            <div class="line"></div>
+                            <span class="karla">H. Janisch - Team Partner</span>
+                        </div>
+                    </article>
+                </li>
+                <li>
+                    <article class="card">
+                        <p class="karla">Marcel brings a strong mix of technical skill and creative thinking.
+                            His ability to quickly grasp complex concepts makes him a key contributor to every project.
+                        </p>
+                        <div>
+                            <div class="line"></div>
+                            <span class="karla">A. Müller – Project Lead</span>
+                        </div>
+                    </article>
+                </li>
+                <li>
+                    <article class="card">
+                        <p class="karla">Marcel consistently delivers clean and efficient solutions.
+                            His reliability and proactive mindset inspire confidence in the whole team.</p>
+                        <div>
+                            <div class="line"></div>
+                            <span class="karla">L. Schneider – Senior Developer</span>
+                        </div>
+                    </article>
+                </li>
+            </ul>
+            <button (click)="buttonScroll('right')">
+                <img src="assets/img/carousel/right-arrow.svg" alt="Button to get to the next testimonial">
+            </button>
+        </div>
+
     </div>
 </section>
