@@ -65,16 +65,32 @@ export class CarouselComponent implements AfterViewInit {
   }
 
 
+
   infiniteScroll() {
-    if (this.carouselEl().nativeElement.scrollLeft === 0) {
+    if (this.carouselEl().nativeElement.scrollLeft <= 64) {
       this.carouselEl().nativeElement.classList.add('no-transition');
       this.carouselEl().nativeElement.scrollLeft = this.carouselEl().nativeElement.scrollWidth - (2 * this.carouselEl().nativeElement.offsetWidth);
       this.carouselEl().nativeElement.classList.remove('no-transition');
     }
-    else if (Math.ceil(this.carouselEl().nativeElement.scrollLeft) === this.carouselEl().nativeElement.scrollWidth - this.carouselEl().nativeElement.offsetWidth) {
+    else if (this.carouselEl().nativeElement.scrollLeft + 64 >= this.carouselEl().nativeElement.scrollWidth - this.carouselEl().nativeElement.offsetWidth) {
       this.carouselEl().nativeElement.classList.add('no-transition');
       this.carouselEl().nativeElement.scrollLeft = this.carouselEl().nativeElement.offsetWidth;
       this.carouselEl().nativeElement.classList.remove('no-transition');
     }
   }
+
+
+  // infiniteScroll() {
+  //   if (this.carouselEl().nativeElement.scrollLeft === 0) {
+  //     this.carouselEl().nativeElement.classList.add('no-transition');
+  //     this.carouselEl().nativeElement.scrollLeft = this.carouselEl().nativeElement.scrollWidth - (2 * this.carouselEl().nativeElement.offsetWidth);
+  //     this.carouselEl().nativeElement.classList.remove('no-transition');
+  //   }
+  //   else if (Math.ceil(this.carouselEl().nativeElement.scrollLeft) === this.carouselEl().nativeElement.scrollWidth - this.carouselEl().nativeElement.offsetWidth) {
+  //     this.carouselEl().nativeElement.classList.add('no-transition');
+  //     this.carouselEl().nativeElement.scrollLeft = this.carouselEl().nativeElement.offsetWidth;
+  //     this.carouselEl().nativeElement.classList.remove('no-transition');
+  //   }
+  // }
+
 }

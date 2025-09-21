@@ -21,31 +21,44 @@ h3 {
 }
 
 .wrapper {
-    max-width: 100%;
+    max-width: 1440px;
     width: 100%;
     position: relative;
 }
 
-.wrapper button {
-    background: transparent;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+.controls {
+    @include dFlex($g: 1.25rem);
+    margin-top: 3rem;
+
+    >button {
+        background: transparent;
+
+        &:hover {
+            .arrow {
+                fill: $teal-dark;
+            }
+
+            >svg {
+                transform: scale(1.2);
+            }
+        }
+    }
 }
 
-.wrapper button:first-child {
-    left: -22px;
+svg {
+    transition: transform 300ms ease-out;
 }
 
-.wrapper button:last-child {
-    right: -22px;
+.arrow {
+    fill: white;
+    transition: fill 300ms ease-out;
 }
 
 .carousel {
     display: grid;
     grid-auto-flow: column;
-    grid-auto-columns: calc((100% / 3) - 12px);
-    gap: 16px;
+    grid-auto-columns: calc(100% / 3);
+    gap: 4rem;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
@@ -106,3 +119,16 @@ p {
     font-size: $font-size-lg;
     font-weight: $font-weight-normal;
 }
+
+@media (max-width: 900px) {
+    .carousel {
+        grid-auto-columns: calc(100% / 2);
+    }
+}
+
+// @media (max-width: 600px) {
+//     .carousel {
+//         grid-auto-columns: 100%;
+//         gap: 0.5rem;
+//     }
+// }
