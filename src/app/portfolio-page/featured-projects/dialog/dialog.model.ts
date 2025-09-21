@@ -5,4 +5,5 @@ export interface dialogData {
     usedTech: string[];
     snapshot: string;
     github: string;
+    route: string;
 }

@@ -15,7 +15,8 @@ export class DialogService {
       information: 'Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.',
       usedTech: ['CSS', 'HTML', 'Firebase', 'JavaScript'],
       snapshot: 'assets/img/dialog/join.png',
-      github: 'https://github.com/Marcel-Goehn/Join-Dashboard'
+      github: 'https://github.com/Marcel-Goehn/Join-Dashboard',
+      route: '#'
     },
     {
       id: 2,
@@ -23,15 +24,17 @@ export class DialogService {
       information: 'Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen.',
       usedTech: ['JavaScript', 'HTML', 'CSS'],
       snapshot: 'assets/img/dialog/el-pollo-loco.png',
-      github: 'https://github.com/Marcel-Goehn/El-Pollo-Loco'
+      github: 'https://github.com/Marcel-Goehn/El-Pollo-Loco',
+      route: 'https://marcel-goehn.developerakademie.net/pollo-loco/'
     },
     {
       id: 3,
       title: 'Pokedex',
-      information: 'This App is a Slack Clone App. It revolutionizes team communication and collaboration with its intuitive interface, real-time messaging, and robust channel organization.',
+      information: 'This app is a dynamic Pokédex built with HTML, CSS and JavaScript. It fetches Pokémon data from an API and displays each creature with its name, image and type. Users can quickly search and explore different Pokémon in an interactive and responsive interface.',
       usedTech: ['JavaScript', 'HTML', 'CSS'],
-      snapshot: 'assets/img/dialog/da-bubble.png',
-      github: 'https://github.com/Marcel-Goehn/pokedex'
+      snapshot: 'assets/img/dialog/pokedex.png',
+      github: 'https://github.com/Marcel-Goehn/pokedex',
+      route: 'https://marcel-goehn.developerakademie.net/pokedex/'
     }
   ]);
   dialogData$ = this.dialogData.asReadonly();
