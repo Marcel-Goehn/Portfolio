@@ -16,7 +16,7 @@ export class DialogService {
       usedTech: ['CSS', 'HTML', 'Firebase', 'JavaScript'],
       snapshot: 'assets/img/dialog/join.png',
       github: 'https://github.com/Marcel-Goehn/Join-Dashboard',
-      route: '#'
+      route: 'https://marcel-goehn.developerakademie.net/Join/'
     },
     {
       id: 2,
