@@ -7,13 +7,9 @@
                 <img src="assets/img/carousel/back-arrow.svg" alt="Back button to get to the last testimonial">
             </button>
             <ul (mousedown)="dragStart($event)" (mousemove)="dragging($event)" (scroll)="infiniteScroll()"
-                class="carousel" #carousel [ngClass]="
-                {
-                    'dragging' : isDragging(),
-                    'no-transition' : noTransition()
-                }">
-                <li>
-                    <article class="card" #card>
+                class="carousel" #carousel>
+                <li #card>
+                    <article class="card">
                         <p class="karla">Marcel has proven to be a reliable group partner. His technical skills and
                             proactive approach were crucial to the success of our</p>
                         <div>

@@ -21,8 +21,6 @@ export class CarouselComponent implements AfterViewInit {
 
   cardPerView = signal(0);
 
-  noTransition = signal(false);
-
 
   ngAfterViewInit(): void {
     this.firstCardWidth.set(this.firstCardEl().nativeElement.offsetWidth);
@@ -46,15 +44,17 @@ export class CarouselComponent implements AfterViewInit {
 
   dragStart(e: MouseEvent) {
     this.isDragging.set(true);
+    this.carouselEl().nativeElement.classList.add('dragging');
+
     this.startX.set(e.pageX);
     this.startScrollLeft.set(this.carouselEl().nativeElement.scrollLeft);
-    console.log(this.startScrollLeft());
   }
 
 
   @HostListener('document:mouseup')
   dragEnd() {
     this.isDragging.set(false);
+    this.carouselEl().nativeElement.classList.remove('dragging');
   }
 
 
@@ -67,14 +67,14 @@ export class CarouselComponent implements AfterViewInit {
 
   infiniteScroll() {
     if (this.carouselEl().nativeElement.scrollLeft === 0) {
-      this.noTransition.set(true);
+      this.carouselEl().nativeElement.classList.add('no-transition');
       this.carouselEl().nativeElement.scrollLeft = this.carouselEl().nativeElement.scrollWidth - (2 * this.carouselEl().nativeElement.offsetWidth);
-      this.noTransition.set(false);
+      this.carouselEl().nativeElement.classList.remove('no-transition');
     }
     else if (Math.ceil(this.carouselEl().nativeElement.scrollLeft) === this.carouselEl().nativeElement.scrollWidth - this.carouselEl().nativeElement.offsetWidth) {
-      this.noTransition.set(true);
+      this.carouselEl().nativeElement.classList.add('no-transition');
       this.carouselEl().nativeElement.scrollLeft = this.carouselEl().nativeElement.offsetWidth;
-      this.noTransition.set(false);
+      this.carouselEl().nativeElement.classList.remove('no-transition');
     }
   }
 }
