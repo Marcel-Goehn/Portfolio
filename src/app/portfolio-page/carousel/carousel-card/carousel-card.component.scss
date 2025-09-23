@@ -31,3 +31,16 @@ article {
         white-space: nowrap;
     }
 }
+
+@media (max-width: 800px) {
+    article {
+        height: 360px;
+    }
+}
+
+@media (max-width: 450px) {
+    article {
+        height: 280px;
+        padding: 2rem 1rem;
+    }
+}
