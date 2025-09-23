@@ -1,13 +1,18 @@
 <section>
     <div class="container">
         <h3 class="fira">What my colleagues say about me</h3>
-        <div class="carousel">
-            @for (testimonial of testimonialData(); track $index) {
-            <app-carousel-card [testimonialInfo]="testimonial" [ngClass]="{
+        <div class="carousel__wrapper">
+            <div class="carousel">
+                @for (testimonial of testimonialData(); track $index) {
+                <app-carousel-card [testimonialInfo]="testimonial" [ngClass]="{
                 'move-right' : moveRight(),
                 'move-left' : moveLeft()
-            }"/>
-            }
+            }" />
+                }
+            </div>
+            <div class="quotes">
+                <img src="assets/img/carousel/quotes.svg">
+            </div>
         </div>
         <div class="navigations">
             <button [disabled]="disableButton()" (click)="scrollCarousel('left')" class="navigations_buttons">

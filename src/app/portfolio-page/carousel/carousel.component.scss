@@ -18,11 +18,32 @@ h3 {
     text-align: center;
 }
 
+.carousel__wrapper {
+    position: relative;
+
+    >.quotes {
+        position: absolute;
+        top: 0;
+        height: 274px;
+        width: 632px;
+        left: 50%;
+        transform: translate(-50%);
+        z-index: 100;
+
+        >img {
+            transform: translate(-49%, -12%);
+            position: relative;
+            z-index: 101;
+        }
+    }
+}
+
 .carousel {
     margin-top: 3rem;
     @include dFlex($g: 4rem);
-    overflow: hidden;
+    overflow-x: hidden;
     position: relative;
+    z-index: 0;
 }
 
 .carousel::before,
