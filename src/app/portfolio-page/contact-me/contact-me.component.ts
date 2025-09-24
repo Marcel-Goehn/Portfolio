@@ -3,6 +3,7 @@ import { ButtonComponent } from "../../shared/button/button.component";
 import { AbstractControl, FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { NgClass } from '@angular/common';
 import { HttpClient } from '@angular/common/http';
+import { ContactMeDialogComponent } from "./contact-me-dialog/contact-me-dialog.component";
 
 
 function mustAcceptPrivacyPolicy(control: AbstractControl) {
@@ -17,7 +18,7 @@ function mustAcceptPrivacyPolicy(control: AbstractControl) {
 @Component({
   selector: 'app-contact-me',
   standalone: true,
-  imports: [ButtonComponent, ReactiveFormsModule, NgClass],
+  imports: [ButtonComponent, ReactiveFormsModule, NgClass, ContactMeDialogComponent],
   templateUrl: './contact-me.component.html',
   styleUrl: './contact-me.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush
@@ -29,6 +30,7 @@ export class ContactMeComponent implements OnInit {
   enteredEmailInvalid = signal(false);
   enteredMessageInvalid = signal(false);
   checkboxValid = signal(false);
+  emailGotDelivered = signal(false);
 
   form = new FormGroup({
     name: new FormControl("", {
@@ -48,7 +50,7 @@ export class ContactMeComponent implements OnInit {
   mailTest = true;
 
   post = {
-    endPoint: 'https://deineDomain.de/sendMail.php',
+    endPoint: 'https://marcelgoehn.de/sendMail.php',
     body: (payload: any) => JSON.stringify(payload),
     options: {
       headers: {
@@ -128,6 +130,7 @@ export class ContactMeComponent implements OnInit {
         error: (error) => {
           console.error(error);
         },
+        complete: () => this.emailGotDelivered.set(true)
       });
   }
 
@@ -145,5 +148,15 @@ export class ContactMeComponent implements OnInit {
     } else if (formGroupMember === 'message') {
       this.enteredMessageInvalid.set(false);
     }
+  }
+
+
+  /**
+   * Closes the confirmation dialog
+   * 
+   * @param bool - Will be false
+   */
+  closeDialog(bool: boolean) {
+    this.emailGotDelivered.set(bool);
   }
 }

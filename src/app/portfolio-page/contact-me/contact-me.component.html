@@ -64,4 +64,7 @@
             </div>
         </div>
     </div>
+    @if (emailGotDelivered()) {
+        <app-contact-me-dialog (close)="closeDialog($event)"/>
+    }
 </section>
