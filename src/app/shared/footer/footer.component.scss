@@ -88,6 +88,10 @@ li a {
     }
 }
 
+.pointer {
+    cursor: pointer;
+}
+
 #copyright_mobile {
     @include dFlex($g: 0.5rem);
     margin-top: 2rem;

@@ -40,11 +40,19 @@ export class DialogService {
   dialogData$ = this.dialogData.asReadonly();
 
 
+  /**
+   * It changes the index to show an other project
+   * 
+   * @param i - The index
+   */
   onChangeIndex(i: number) {
     this.index.set(i);
   }
 
 
+  /**
+   * This method increments the index
+   */
   onIncrementIndex() {
     this.index.update((num) => (num + 1) % this.dialogData().length);
   }

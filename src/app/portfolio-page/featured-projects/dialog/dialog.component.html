@@ -23,7 +23,7 @@
                         @for (skill of data()[index()].usedTech; track $index) {
                         <img [src]="'assets/img/dialog/' + skill + '.svg'" [alt]="'Used skill' + skill">
                         } @empty {
-                        <p>No skills have been used.</p>
+                        <p class="karla">No skills have been used.</p>
                         }
                     </div>
                     <div class="button-links">

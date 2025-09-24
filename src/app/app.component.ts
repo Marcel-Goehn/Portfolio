@@ -19,6 +19,9 @@ export class AppComponent {
   leftPosition = signal<number | null>(null);
 
 
+  /**
+   * It calculates the position of the mouse to move it's shadow to it when the mouse is getting moved
+   */
   calculateMouseShadow(e: MouseEvent) {
     this.topPosition.set(e.clientY);
     this.leftPosition.set(e.clientX);
