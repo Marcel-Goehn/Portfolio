@@ -17,9 +17,9 @@
                         [ngClass]="{'focused-link' : projectsIsClicked()}" class="fira">Projects</a></li>
             </ul>
         </nav>
-        <img class="logo" src="assets/img/hero-section/logo.webp" alt="Logo">
+        <app-logo />
         } @else {
-        <img class="logo" src="assets/img/hero-section/logo.webp" alt="Logo">
+        <app-logo />
         <svg (click)="openBurgerMenu()" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"
             fill="none">
             <mask id="mask0_3001_2528" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="48"
@@ -39,11 +39,14 @@
                 <div class="wrapper" (click)="$event.stopPropagation()">
                     <nav>
                         <ul>
-                            <li><a [routerLink]="['/']" fragment="about-me" (click)="changeActiveNavLink(true, false, false)" class="fira">About me</a>
+                            <li><a [routerLink]="['/']" fragment="about-me"
+                                    (click)="changeActiveNavLink(true, false, false)" class="fira">About me</a>
                             </li>
-                            <li><a [routerLink]="['/']" fragment="skills" (click)="changeActiveNavLink(false, true, false)" class="fira">Skills</a>
+                            <li><a [routerLink]="['/']" fragment="skills"
+                                    (click)="changeActiveNavLink(false, true, false)" class="fira">Skills</a>
                             </li>
-                            <li><a [routerLink]="['/']" fragment="projects" (click)="changeActiveNavLink(false, false, true)" class="fira">Projects</a>
+                            <li><a [routerLink]="['/']" fragment="projects"
+                                    (click)="changeActiveNavLink(false, false, true)" class="fira">Projects</a>
                             </li>
                             <li class="language-btn-container">
                                 <button [disabled]="english()" (click)="changeLanguage()"

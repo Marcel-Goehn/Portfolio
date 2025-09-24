@@ -2,11 +2,12 @@ import { NgClass } from '@angular/common';
 import { ChangeDetectionStrategy, Component, DestroyRef, inject, OnInit, signal } from '@angular/core';
 import { ActivatedRoute, Router } from "@angular/router";
 import { HeaderService } from '../header/header.service';
+import { LogoComponent } from "../logo/logo.component";
 
 @Component({
   selector: 'app-footer',
   standalone: true,
-  imports: [NgClass],
+  imports: [NgClass, LogoComponent],
   templateUrl: './footer.component.html',
   styleUrl: './footer.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush

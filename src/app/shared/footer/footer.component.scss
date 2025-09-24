@@ -22,15 +22,13 @@
 }
 
 .logo-footer-container {
-    >img {
-        width: 132px;
-        height: 48px;
-        object-fit: cover;
-        margin-bottom: 2rem;
-    }
 
-    >img+p {
-        margin-bottom: 0.5rem;
+    >app-logo {
+
+        +p {
+            margin-top: 2rem;
+            margin-bottom: 0.5rem;
+        }
     }
 
     >p {
