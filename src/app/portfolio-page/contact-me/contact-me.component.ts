@@ -2,6 +2,7 @@ import { ChangeDetectionStrategy, Component, DestroyRef, inject, OnInit, signal 
 import { ButtonComponent } from "../../shared/button/button.component";
 import { AbstractControl, FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { NgClass } from '@angular/common';
+import { HttpClient } from '@angular/common/http';
 
 
 function mustAcceptPrivacyPolicy(control: AbstractControl) {
@@ -22,7 +23,7 @@ function mustAcceptPrivacyPolicy(control: AbstractControl) {
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class ContactMeComponent implements OnInit {
-
+  private httpClient = inject(HttpClient);
   private destroyRef = inject(DestroyRef);
   enteredNameInvalid = signal(false);
   enteredEmailInvalid = signal(false);
@@ -44,6 +45,19 @@ export class ContactMeComponent implements OnInit {
     })
   });
 
+  mailTest = true;
+
+  post = {
+    endPoint: 'https://deineDomain.de/sendMail.php',
+    body: (payload: any) => JSON.stringify(payload),
+    options: {
+      headers: {
+        'Content-Type': 'text/plain',
+        responseType: 'text',
+      },
+    },
+  };
+
   ngOnInit(): void {
     const subscription = this.form.controls.checkbox.valueChanges.subscribe({
       next: value => this.checkboxValid.set(value!)
@@ -54,7 +68,6 @@ export class ContactMeComponent implements OnInit {
 
 
   onSubmit() {
-    debugger;
     if (this.form.invalid) {
       if (!this.form.controls.name.valid) {
         this.enteredNameInvalid.set(true);
@@ -71,12 +84,33 @@ export class ContactMeComponent implements OnInit {
       if (!this.form.controls.checkbox.valid) {
         this.checkboxValid.set(false);
       }
-
       return;
     }
+    this.sendMail(this.getContactData());
+  }
 
-    console.log(this.form);
-    this.form.reset();
+
+  getContactData() {
+    return {
+      name: this.form.controls.name.value!,
+      email: this.form.controls.email.value!,
+      message: this.form.controls.message.value!
+    }
+  }
+
+
+  sendMail(contactData: { name: string, email: string, message: string }) {
+    this.httpClient.post(this.post.endPoint, this.post.body(contactData))
+      .subscribe({
+        next: (response) => {
+          this.form.reset();
+        },
+        error: (error) => {
+          console.error(error);
+        },
+      });
+
+    // console.log(contactData);
   }
 
 
