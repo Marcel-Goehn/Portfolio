@@ -28,6 +28,7 @@ export class FooterComponent implements OnInit {
   ngOnInit(): void {
     const subscription = this.activatedRoute.url.subscribe({
       next: (param) => {
+        debugger;
         if (!param.length) {
           return;
         }
@@ -41,8 +42,8 @@ export class FooterComponent implements OnInit {
   /**
    * If the route is being changed from the landing page to the legal-notice page, the header links will be resetted
    */
-  resetActiveHeaderLinks() {
+  resetActiveHeaderLinks(route: string) {
     this.headerService.resetActiveHeaderLinks();
-    this.router.navigate(['/legal-notice']);
+    this.router.navigate([route]);
   }
 }
