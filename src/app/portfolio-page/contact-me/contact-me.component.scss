@@ -159,7 +159,6 @@ p {
         }
 
         &:checked+label::before {
-            // content: url('../../../assets/img/contact-me/check.svg');
             content: '\002714';
             color: $teal-dark;
             @include dFlex();

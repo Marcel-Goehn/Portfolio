@@ -49,25 +49,46 @@ export class CarouselComponent {
   })
 
 
+  /**
+   * This method checks in wich direction the carousel should scroll and calls the right method for it
+   * 
+   * @param direction - It tells the carousel in wich direction it should slide
+   */
   scrollCarousel(direction: 'left' | 'right') {
     if (direction === 'left') {
-      const lastElement = this.testimonialData()[this.testimonialData().length - 1];
-      const filteredArray = this.testimonialData().filter(element => element !== lastElement);
-      this.moveRight.set(true);
-      setTimeout(() => {
-        this.testimonialData.set([lastElement, ...filteredArray]);
-        this.moveRight.set(false);
-      }, 1000);
-      this.currentCarouselCard.update(prevIndex => (prevIndex - 1 + this.testimonialData().length) % this.testimonialData().length);
+      this.scrollLeft();
     } else {
-      const firstElement = this.testimonialData()[0];
-      const filteredArray = this.testimonialData().filter(element => element !== firstElement);
-      this.moveLeft.set(true);
-      setTimeout(() => {
-        this.testimonialData.set([...filteredArray, firstElement]);
-        this.moveLeft.set(false);
-      }, 1000);
-      this.currentCarouselCard.update(prevIndex => (prevIndex + 1) % this.testimonialData().length);
+      this.scrollRight();
     }
+  }
+
+
+  /**
+   * This method will scroll the carousel to the left side
+   */
+  scrollLeft() {
+    const lastElement = this.testimonialData()[this.testimonialData().length - 1];
+    const filteredArray = this.testimonialData().filter(element => element !== lastElement);
+    this.moveRight.set(true);
+    setTimeout(() => {
+      this.testimonialData.set([lastElement, ...filteredArray]);
+      this.moveRight.set(false);
+    }, 1000);
+    this.currentCarouselCard.update(prevIndex => (prevIndex - 1 + this.testimonialData().length) % this.testimonialData().length);
+  }
+
+
+  /**
+   * This method will scroll the carousel to the right side
+   */
+  scrollRight() {
+    const firstElement = this.testimonialData()[0];
+    const filteredArray = this.testimonialData().filter(element => element !== firstElement);
+    this.moveLeft.set(true);
+    setTimeout(() => {
+      this.testimonialData.set([...filteredArray, firstElement]);
+      this.moveLeft.set(false);
+    }, 1000);
+    this.currentCarouselCard.update(prevIndex => (prevIndex + 1) % this.testimonialData().length);
   }
 }

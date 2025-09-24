@@ -19,6 +19,12 @@ export class FooterComponent implements OnInit {
   private headerService = inject(HeaderService);
   currentUrl = signal('');
 
+
+  /**
+   * Set's up a subscription when initializing the component. 
+   * It watches if the route changes. Because it will decide wich background color the footer gets
+   * 
+   */
   ngOnInit(): void {
     const subscription = this.activatedRoute.url.subscribe({
       next: (param) => {
@@ -32,6 +38,9 @@ export class FooterComponent implements OnInit {
   }
 
 
+  /**
+   * If the route is being changed from the landing page to the legal-notice page, the header links will be resetted
+   */
   resetActiveHeaderLinks() {
     this.headerService.resetActiveHeaderLinks();
     this.router.navigate(['/legal-notice']);

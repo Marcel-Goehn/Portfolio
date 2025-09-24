@@ -19,17 +19,32 @@ export class HeroComponent {
   mailIsHovered = signal(false);
 
 
+  /**
+   * Changes the color of the hovered icon
+   * 
+   * @param bool - name of the link
+   */
   changeGithubHoverState(bool: boolean) {
     this.githubIsHovered.set(bool);
   }
 
 
+  /**
+   * Changes the color of the hovered icon
+   * 
+   * @param bool - name of the link
+   */
   changeLinkedInHoverState(bool: boolean) {
     this.linkedInIsHovered.set(bool);
   }
 
 
+  /**
+   * Changes the color of the hovered icon
+   * 
+   * @param bool - name of the link
+   */
   changeMailHoverState(bool: boolean) {
     this.mailIsHovered.set(bool);
-  }    
+  }
 }

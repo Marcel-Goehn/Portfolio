@@ -20,6 +20,11 @@ export class FeaturedProjectsComponent {
   projectThreeIsHovered = signal(false);
 
 
+  /**
+   * If a project section is hovered, it will reveal a screenshot of the project
+   * 
+   * @param project - Name of the project
+   */
   toggleImage(project: string)  {
     if (project === 'one') {
       this.projectOneIsHovered.set(!this.projectOneIsHovered());
@@ -30,6 +35,12 @@ export class FeaturedProjectsComponent {
     }
   }
 
+
+  /**
+   * This method opens the dialog
+   * 
+   * @param i - The index of the project
+   */
   openDialog(i: number) {
     this.dialogService.onChangeIndex(i);
     this.dialogService.dialogOpened.set(true);

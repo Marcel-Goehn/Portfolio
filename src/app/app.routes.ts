@@ -3,6 +3,6 @@ import { PortfolioPageComponent } from './portfolio-page/portfolio-page.componen
 import { LegalNoticeComponent } from './legal-notice/legal-notice.component';
 
 export const routes: Routes = [
-    { path: '', component: PortfolioPageComponent },
-    { path: 'legal-notice', component: LegalNoticeComponent, }
+    { path: '', component: PortfolioPageComponent, title: 'Marcel Göhn | Portfolio' },
+    { path: 'legal-notice', component: LegalNoticeComponent, title: 'Marcel Göhn | Legal Notice'}
 ];

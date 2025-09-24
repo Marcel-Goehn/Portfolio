@@ -58,6 +58,12 @@ export class ContactMeComponent implements OnInit {
     },
   };
 
+
+  /**
+   * Set's up a subscription when initializing this component to the checkbox of the formgroup
+   * This subscription changes the checkboxValid variable when the value of the checkbox changes
+   * 
+   */
   ngOnInit(): void {
     const subscription = this.form.controls.checkbox.valueChanges.subscribe({
       next: value => this.checkboxValid.set(value!)
@@ -67,6 +73,11 @@ export class ContactMeComponent implements OnInit {
   }
 
 
+  /**
+   * This method submits the form, and if it is valid it calls the http client to send the email
+   * 
+   * @returns - It return's if the form is invalid
+   */
   onSubmit() {
     if (this.form.invalid) {
       if (!this.form.controls.name.valid) {
@@ -90,6 +101,10 @@ export class ContactMeComponent implements OnInit {
   }
 
 
+  /**
+   * 
+   * @returns - It returns the input value of the form when it is getting submitted
+   */
   getContactData() {
     return {
       name: this.form.controls.name.value!,
@@ -99,6 +114,11 @@ export class ContactMeComponent implements OnInit {
   }
 
 
+  /**
+   * This method send's the form data to the desired email address and reset's the form at the end
+   * 
+   * @param contactData - Hold's the value of the form
+   */
   sendMail(contactData: { name: string, email: string, message: string }) {
     this.httpClient.post(this.post.endPoint, this.post.body(contactData))
       .subscribe({
@@ -109,11 +129,14 @@ export class ContactMeComponent implements OnInit {
           console.error(error);
         },
       });
-
-    // console.log(contactData);
   }
 
 
+  /**
+   * It removes the validation error message when clicking into the input field
+   * 
+   * @param formGroupMember - The name of the input field
+   */
   removeValidationError(formGroupMember: string) {
     if (formGroupMember === 'name') {
       this.enteredNameInvalid.set(false);

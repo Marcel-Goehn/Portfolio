@@ -20,16 +20,27 @@ export class DialogComponent implements AfterViewInit {
   index = this.dialogService.index;
 
 
+  /**
+   * Triggers the .showModal() method when the HTMLDialogElement is finished rendering into the dom
+   */
   ngAfterViewInit(): void {
     this.dialogEl().nativeElement.showModal();
   }
 
 
+  /**
+   * Increments the index to show the next project
+   */
   onIncrementIndex() {
     this.dialogService.onIncrementIndex();
   }
 
 
+  /**
+   * This method checks if the a click next to the dialog was registered, if true it calls the onCloseDialog method
+   * 
+   * @param e - event
+   */
   onBackdropClose(e: MouseEvent) {
     if(e.target === this.dialogEl().nativeElement) {
       this.onCloseDialog();
@@ -37,6 +48,9 @@ export class DialogComponent implements AfterViewInit {
   }
 
 
+  /**
+   * This method closes the dialog
+   */
   onCloseDialog() {
     this.dialogService.dialogOpened.set(false);
   }

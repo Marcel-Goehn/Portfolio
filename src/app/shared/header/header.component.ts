@@ -27,27 +27,42 @@ export class HeaderComponent {
   burgerMenuOpen = signal(false);
 
 
+  /**
+   * It changes the look of the buttons when a specific language is active
+   */
   changeLanguage() {
     this.english.set(!this.english());
     this.german.set(!this.german());
   }
 
 
+  /**
+   * This method changes the active link when a links is getting clicked 
+   */
   changeActiveNavLink(boolOne: boolean, boolTwo: boolean, boolThree: boolean) {
     this.headerService.changeActiveNavLink(boolOne, boolTwo, boolThree);
   }
 
 
+  /**
+   * Saves the current window width in the currentWindowWidth variable when the screen get's resized
+   */
   onResize() {
     this.currentWindowWidth.set(window.innerWidth);
   }
 
 
+  /**
+   * This method opens the burger menu
+   */
   openBurgerMenu() {
     this.burgerMenuOpen.set(true);
   }
 
 
+  /**
+   * This method closes the burger menu
+   */
   closeBurgerMenu() {
     this.burgerMenuOpen.set(false);
   }

@@ -21,6 +21,10 @@ import { CarouselComponent } from "./carousel/carousel.component";
 export class PortfolioPageComponent {
   currentWindowWidth = signal(window.innerWidth);
 
+
+  /**
+   * Saves the current width of the screen into the currentWindowWidth variable
+   */
   onResize() {
     this.currentWindowWidth.set(window.innerWidth);
   }

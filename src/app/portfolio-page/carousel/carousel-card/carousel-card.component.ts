@@ -1,5 +1,4 @@
 import { Component, input } from '@angular/core';
-import { type Testimonial } from '../carousel.model';
 
 @Component({
   selector: 'app-carousel-card',
