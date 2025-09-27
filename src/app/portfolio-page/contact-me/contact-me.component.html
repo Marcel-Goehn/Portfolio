@@ -12,7 +12,7 @@
             </article>
 
             <div>
-                <form [formGroup]="form" (ngSubmit)="onSubmit()">
+                <form [formGroup]="form" (ngSubmit)="onSubmit($event)">
                     <div class="name-container" (click)="removeValidationError('name')">
                         <label class="fira" for="name">What's your name?</label>
                         @if (!enteredNameInvalid()) {
@@ -38,7 +38,7 @@
                     <div class="interest-container" (click)="removeValidationError('message')">
                         <label class="fira" for="interest">How can I help you?</label>
                         @if (!enteredMessageInvalid()) {
-                        <input class="karla" type="text" id="interest" name="interest"
+                        <input class="karla" type="text" id="interest" name="message"
                             placeholder="Hello Marcel, I am interested in..." formControlName="message">
                         }
                         @else {

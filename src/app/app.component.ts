@@ -17,6 +17,7 @@ import { HeaderComponent } from "./shared/header/header.component";
 export class AppComponent {
   topPosition = signal<number | null>(null);
   leftPosition = signal<number | null>(null);
+  screenWidth = signal(window.innerWidth);
 
 
   /**

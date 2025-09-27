@@ -2,8 +2,8 @@ import { ChangeDetectionStrategy, Component, DestroyRef, inject, OnInit, signal 
 import { ButtonComponent } from "../../shared/button/button.component";
 import { AbstractControl, FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { NgClass } from '@angular/common';
-import { HttpClient } from '@angular/common/http';
 import { ContactMeDialogComponent } from "./contact-me-dialog/contact-me-dialog.component";
+import emailjs, { type EmailJSResponseStatus } from '@emailjs/browser';
 
 
 function mustAcceptPrivacyPolicy(control: AbstractControl) {
@@ -24,7 +24,6 @@ function mustAcceptPrivacyPolicy(control: AbstractControl) {
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class ContactMeComponent implements OnInit {
-  private httpClient = inject(HttpClient);
   private destroyRef = inject(DestroyRef);
   enteredNameInvalid = signal(false);
   enteredEmailInvalid = signal(false);
@@ -47,19 +46,6 @@ export class ContactMeComponent implements OnInit {
     })
   });
 
-  mailTest = true;
-
-  post = {
-    endPoint: 'https://marcelgoehn.de/sendMail.php',
-    body: (payload: any) => JSON.stringify(payload),
-    options: {
-      headers: {
-        'Content-Type': 'text/plain',
-        responseType: 'text',
-      },
-    },
-  };
-
 
   /**
    * Set's up a subscription when initializing this component to the checkbox of the formgroup
@@ -76,11 +62,11 @@ export class ContactMeComponent implements OnInit {
 
 
   /**
-   * This method submits the form, and if it is valid it calls the http client to send the email
+   * This method submits the form, and if it is valid it calls the emailJS library to send the email
    * 
    * @returns - It return's if the form is invalid
    */
-  onSubmit() {
+  onSubmit(e: Event) {
     if (this.form.invalid) {
       if (!this.form.controls.name.valid) {
         this.enteredNameInvalid.set(true);
@@ -99,39 +85,29 @@ export class ContactMeComponent implements OnInit {
       }
       return;
     }
-    this.sendMail(this.getContactData());
+    this.sendForm(e);
   }
 
 
   /**
+   * This is the EmailJS library function to send the form data to my Email
    * 
-   * @returns - It returns the input value of the form when it is getting submitted
+   * @param e - Event
    */
-  getContactData() {
-    return {
-      name: this.form.controls.name.value!,
-      email: this.form.controls.email.value!,
-      message: this.form.controls.message.value!
-    }
-  }
-
-
-  /**
-   * This method send's the form data to the desired email address and reset's the form at the end
-   * 
-   * @param contactData - Hold's the value of the form
-   */
-  sendMail(contactData: { name: string, email: string, message: string }) {
-    this.httpClient.post(this.post.endPoint, this.post.body(contactData))
-      .subscribe({
-        next: (response) => {
+  sendForm(e: Event) {
+    emailjs
+      .sendForm('contact_service', 'contact_form', e.target as HTMLFormElement, {
+        publicKey: 'RChVAHhQ3eIqcfC2-',
+      })
+      .then(
+        () => {
           this.form.reset();
+          this.emailGotDelivered.set(true);
         },
-        error: (error) => {
-          console.error(error);
+        (error) => {
+          console.error('FAILED...', (error as EmailJSResponseStatus).text);
         },
-        complete: () => this.emailGotDelivered.set(true)
-      });
+      );
   }
 
 
@@ -160,3 +136,10 @@ export class ContactMeComponent implements OnInit {
     this.emailGotDelivered.set(bool);
   }
 }
+
+
+
+
+
+
+
