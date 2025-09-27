@@ -1,16 +1,16 @@
 <section>
     <div class="container">
         <div class="title-container">
-            <h2 class="fira">Frontend Developer</h2>
+            <h2 i18n class="fira">Frontend Developer</h2>
             <h1 class="karla">Marcel Göhn</h1>
             <div class="link-btns-container">
-                <a [routerLink]="['/']" fragment="projects" appButton class="karla navigate-to-links" href="#">
-                    <div class="wrapper karla">
+                <a [routerLink]="['/']" fragment="projects" appButton class="karla navigate-to-links">
+                    <div i18n class="wrapper karla">
                         Check my work
                     </div>
                 </a>
-                <a [routerLink]="['/']" fragment="contact" appButton class="karla navigate-to-links" href="#">
-                    <div class="wrapper karla">
+                <a [routerLink]="['/']" fragment="contact" appButton class="karla navigate-to-links">
+                    <div i18n class="wrapper karla">
                         Contact me
                     </div>
                 </a>
@@ -37,7 +37,7 @@
                         </a>
                         <a (mouseleave)="changeMailHoverState(false)" [ngClass]="{'d_none' : !mailIsHovered()}"
                             href="mailto:marcelgoehn@googlemail.com">
-                            <img src="assets/img/hero-section/mail-white.png" alt="E-Mail icon in white">
+                            <img src="assets/img/hero-section/mail-white.png" i18n-alt alt="E-Mail icon in white">
                         </a>
                         }
                         <a (mouseenter)="changeGithubHoverState(true)" [ngClass]="{'d_none' : githubIsHovered()}"
@@ -47,7 +47,7 @@
                         <a class="after-dot" (mouseleave)="changeGithubHoverState(false)"
                             [ngClass]="{'d_none' : !githubIsHovered()}" href="https://github.com/Marcel-Goehn"
                             target="_blank">
-                            <img src="assets/img/hero-section/Github-white.png" alt="Github icon in white">
+                            <img src="assets/img/hero-section/Github-white.png" i18n-alt alt="Github icon in white">
                         </a>
                         <a (mouseenter)="changeLinkedInHoverState(true)" [ngClass]="{'d_none' : linkedInIsHovered()}"
                             href="https://www.linkedin.com/in/marcel-g%C3%B6hn-11b050353/">
@@ -56,7 +56,7 @@
                         <a class="after-dot" (mouseleave)="changeLinkedInHoverState(false)"
                             [ngClass]="{'d_none' : !linkedInIsHovered()}"
                             href="https://www.linkedin.com/in/marcel-g%C3%B6hn-11b050353/" target="_blank">
-                            <img src="assets/img/hero-section/Linkedin-white.png" alt="Linkedin icon in white">
+                            <img src="assets/img/hero-section/Linkedin-white.png" i18n-alt alt="Linkedin icon in white">
                         </a>
                 </div>
                 <div class="bottom-social-border"></div>

@@ -9,11 +9,11 @@
                     <button [disabled]="german()" (click)="changeLanguage()"
                         [ngClass]="german() ? 'language-active' : 'language-inactive'" class="fira">DE</button>
                 </li>
-                <li><a [routerLink]="['/']" fragment="about-me" (click)="changeActiveNavLink(true, false, false)"
+                <li><a i18n [routerLink]="['/']" fragment="about-me" (click)="changeActiveNavLink(true, false, false)"
                         [ngClass]="{'focused-link' : aboutMeIsClicked()}" class="fira">About me</a></li>
                 <li><a [routerLink]="['/']" fragment="skills" (click)="changeActiveNavLink(false, true, false)"
                         [ngClass]="{'focused-link' : skillIsClicked()}" class="fira">Skills</a></li>
-                <li><a [routerLink]="['/']" fragment="projects" (click)="changeActiveNavLink(false, false, true)"
+                <li><a i18n [routerLink]="['/']" fragment="projects" (click)="changeActiveNavLink(false, false, true)"
                         [ngClass]="{'focused-link' : projectsIsClicked()}" class="fira">Projects</a></li>
             </ul>
         </nav>
@@ -39,13 +39,13 @@
                 <div class="wrapper" (click)="$event.stopPropagation()">
                     <nav>
                         <ul>
-                            <li><a [routerLink]="['/']" fragment="about-me"
+                            <li><a i18n [routerLink]="['/']" fragment="about-me"
                                     (click)="changeActiveNavLink(true, false, false)" class="fira">About me</a>
                             </li>
                             <li><a [routerLink]="['/']" fragment="skills"
                                     (click)="changeActiveNavLink(false, true, false)" class="fira">Skills</a>
                             </li>
-                            <li><a [routerLink]="['/']" fragment="projects"
+                            <li><a i18n [routerLink]="['/']" fragment="projects"
                                     (click)="changeActiveNavLink(false, false, true)" class="fira">Projects</a>
                             </li>
                             <li class="language-btn-container">

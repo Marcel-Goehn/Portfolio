@@ -12,7 +12,7 @@ export class DialogService {
     {
       id: 1,
       title: 'Join',
-      information: 'Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.',
+      information: $localize`Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.`,
       usedTech: ['CSS', 'HTML', 'Firebase', 'JavaScript'],
       snapshot: 'assets/img/dialog/join.png',
       github: 'https://github.com/Marcel-Goehn/Join-Dashboard',
@@ -21,7 +21,7 @@ export class DialogService {
     {
       id: 2,
       title: 'El Pollo Loco',
-      information: 'Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen.',
+      information: $localize`Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen.`,
       usedTech: ['JavaScript', 'HTML', 'CSS'],
       snapshot: 'assets/img/dialog/el-pollo-loco.png',
       github: 'https://github.com/Marcel-Goehn/El-Pollo-Loco',
@@ -30,7 +30,7 @@ export class DialogService {
     {
       id: 3,
       title: 'Pokedex',
-      information: 'This app is a dynamic Pokédex built with HTML, CSS and JavaScript. It fetches Pokémon data from an API and displays each creature with its name, image and type. Users can quickly search and explore different Pokémon in an interactive and responsive interface.',
+      information: $localize`This app is a dynamic Pokédex built with HTML, CSS and JavaScript. It fetches Pokémon data from an API and displays each creature with its name, image and type. Users can quickly search and explore different Pokémon in an interactive and responsive interface.`,
       usedTech: ['JavaScript', 'HTML', 'CSS'],
       snapshot: 'assets/img/dialog/pokedex.png',
       github: 'https://github.com/Marcel-Goehn/pokedex',

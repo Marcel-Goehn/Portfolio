@@ -17,33 +17,33 @@
                 <div class="project-information">
                     <h2 class="karla">{{ data()[index()].id | padStart }}</h2>
                     <h3 class="fira">{{ data()[index()].title }}</h3>
-                    <h4 class="fira">What is this project about?</h4>
+                    <h4 i18n class="fira">What is this project about?</h4>
                     <p class="karla">{{ data()[index()].information }}</p>
                     <div class="used-skills">
                         @for (skill of data()[index()].usedTech; track $index) {
-                        <img [src]="'assets/img/dialog/' + skill + '.svg'" [alt]="'Used skill' + skill">
+                        <img [src]="'assets/img/dialog/' + skill + '.svg'" i18n-alt [alt]="'Used skill ' + skill">
                         } @empty {
-                        <p class="karla">No skills have been used.</p>
+                        <p i18n class="karla">No skills have been used.</p>
                         }
                     </div>
                     <div class="button-links">
                         <a class="karla" [href]="data()[index()].github" target="_blank" appButton>
-                            <span>Github</span>
-                            <img src="assets/img/dialog/arrow_outward.svg" alt="Arrow SVG">
+                            <span i18n>Github</span>
+                            <img src="assets/img/dialog/arrow_outward.svg" i18n-alt alt="Arrow SVG">
                         </a>
                         <a class="karla" [href]="data()[index()].route" target="_blank" appButton>
-                            <span>Live Test</span>
-                            <img src="assets/img/dialog/arrow_outward.svg" alt="Arrow SVG">
+                            <span i18n>Live Test</span>
+                            <img src="assets/img/dialog/arrow_outward.svg" i18n-alt alt="Arrow SVG">
                         </a>
                     </div>
                 </div>
                 <figure class="header-img">
-                    <img [src]="data()[index()].snapshot" alt="Screenshot from my Join kanban board project">
+                    <img [src]="data()[index()].snapshot" i18n-alt [alt]="'Screenshot from my ' + data()[index()].title + ' project'">
                 </figure>
             </div>
         </div>
         <div (click)="onIncrementIndex()" class="next-project-container">
-            <span class="karla">Next project</span>
+            <span i18n class="karla">Next project</span>
             <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
                 <mask id="mask0_64219_863" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="4" width="32"
                     height="32">

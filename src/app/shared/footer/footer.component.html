@@ -3,8 +3,8 @@
         <div class="flex-container">
             <div class="logo-footer-container">
                  <app-logo />
-                <p class="karla">Web Developer</p>
-                <p class="karla">Aurich Germany</p>
+                <p i18n class="karla">Web Developer</p>
+                <p i18n class="karla">Aurich Germany</p>
             </div>
             <div id="copyright_desktop" class="copyright">
                 <span class="fira">&copy;</span>
@@ -15,8 +15,8 @@
                     <li><a class="karla" href="https://github.com/Marcel-Goehn" target="_blank">Github</a></li>
                     <li><a class="karla" href="https://www.linkedin.com/in/marcel-g%C3%B6hn-11b050353/" target="_blank">LinkedIn</a></li>
                     <li><a class="karla" href="mailto:marcelgoehn@googlemail.com">Email</a></li>
-                    <li class="pointer"><a class="karla" (click)="resetActiveHeaderLinks('/legal-notice')">Legal Notice</a></li>
-                    <li class="pointer"><a (click)="resetActiveHeaderLinks('/privacy-policy')" class="karla">Privacy Policy</a></li>
+                    <li class="pointer"><a i18n class="karla" (click)="resetActiveHeaderLinks('/legal-notice')">Legal Notice</a></li>
+                    <li class="pointer"><a i18n (click)="resetActiveHeaderLinks('/privacy-policy')" class="karla">Privacy Policy</a></li>
                 </ul>
             </nav>
         </div>

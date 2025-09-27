@@ -4,8 +4,8 @@
     }
     <div class="container">
         <h4 id="projects" class="karla">Portfolio</h4>
-        <h3 class="fira">Featured Projects</h3>
-        <p class="karla explore-paragraph">Explore a selection of my work here - Interact with<br>projects to see my
+        <h3 i18n class="fira">Featured Projects</h3>
+        <p i18n class="karla explore-paragraph">Explore a selection of my work here - Interact with<br>projects to see my
             skills in action.</p>
         <div class="featured-projects">
             <div class="project-names">
@@ -94,16 +94,16 @@
             </div>
             <div id="project-one" [ngClass]="{ 'd_none' : !projectOneIsHovered() }">
                 <img class="fp-1" src="assets/img/featured-projects/join.png"
-                    alt="My Join kanban board for tracking tasks">
+                    i18n-alt alt="My Join kanban board for tracking tasks">
                 <img class="capa" src="assets/img/featured-projects/Capa_1.svg">
             </div>
             <div id="project-two" [ngClass]="{ 'd_none' : !projectTwoIsHovered() }">
                 <img class="fp-2" src="assets/img/featured-projects/el-pollo-loco.png"
-                    alt="A screenshot of Pepe, the character of El-Pollo-Loco">
+                    i18n-alt alt="A screenshot of Pepe, the character of El-Pollo-Loco">
                 <img class="capa" src="assets/img/featured-projects/Capa_1.svg">
             </div>
             <div id="project-three" [ngClass]="{ 'd_none' : !projectThreeIsHovered() }">
-                <img class="fp-3" src="assets/img/featured-projects/Pokedex.png" alt="A screenshot of my Pokedex">
+                <img class="fp-3" src="assets/img/featured-projects/Pokedex.png" i18n-alt alt="A screenshot of my Pokedex">
                 <img class="capa" src="assets/img/featured-projects/Capa_1.svg">
             </div>
         </div>

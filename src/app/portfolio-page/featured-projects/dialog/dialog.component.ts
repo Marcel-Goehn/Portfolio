@@ -18,6 +18,7 @@ export class DialogComponent implements AfterViewInit {
   private dialogService = inject(DialogService);
   data = this.dialogService.dialogData$;
   index = this.dialogService.index;
+  // $localize: any;
 
 
   /**

@@ -5,6 +5,9 @@
   "projects": {
     "portfolio": {
       "projectType": "application",
+      "i18n": {
+        "sourceLocale": "en"
+      },
       "schematics": {
         "@schematics/angular:component": {
           "style": "scss"
