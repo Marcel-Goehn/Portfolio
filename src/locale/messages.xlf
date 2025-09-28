@@ -1,962 +1,399 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
-  <file source-language="en" datatype="plaintext" original="ng2.template">
+  <file source-language="en-US" datatype="plaintext" original="ng2.template">
     <body>
+      <trans-unit id="4333545503379104158" datatype="html">
+        <source>Marcel Göhn | Portfolio</source>
+      </trans-unit>
+      <trans-unit id="6994775103067723427" datatype="html">
+        <source>Marcel Göhn | Legal Notice</source>
+      </trans-unit>
+      <trans-unit id="1419949551103090286" datatype="html">
+        <source>Marcel Göhn | Privacy Policy</source>
+      </trans-unit>
       <trans-unit id="938533143830765572" datatype="html">
         <source>Return to landing page</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/legal-notice/legal-notice.component.html</context>
-          <context context-type="linenumber">3,4</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/privacy-policy/privacy-policy.component.html</context>
-          <context context-type="linenumber">3,4</context>
-        </context-group>
       </trans-unit>
       <trans-unit id="1368884853095124539" datatype="html">
         <source>Legal Notice</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/legal-notice/legal-notice.component.html</context>
-          <context context-type="linenumber">5,6</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/shared/footer/footer.component.html</context>
-          <context context-type="linenumber">18,19</context>
-        </context-group>
       </trans-unit>
       <trans-unit id="5891707175321515013" datatype="html">
         <source>Imprint</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/legal-notice/legal-notice.component.html</context>
-          <context context-type="linenumber">7,8</context>
-        </context-group>
       </trans-unit>
       <trans-unit id="4185803102519780479" datatype="html">
         <source>Exploring the board</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/legal-notice/legal-notice.component.html</context>
-          <context context-type="linenumber">13,14</context>
-        </context-group>
       </trans-unit>
       <trans-unit id="4916906451137847729" datatype="html">
         <source>Acceptance of terms</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/legal-notice/legal-notice.component.html</context>
-          <context context-type="linenumber">15,16</context>
-        </context-group>
       </trans-unit>
       <trans-unit id="7501655788185803507" datatype="html">
         <source>By accessing and using <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>Portfolio<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/> (Product), you acknowledge and agree to the following terms and conditions, and any policies, guidelines, or amendments thereto that may be presented to you from time to time. We, the listed students, may update or change the terms and conditions from time to time without notice.</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/legal-notice/legal-notice.component.html</context>
-          <context context-type="linenumber">16,19</context>
-        </context-group>
       </trans-unit>
       <trans-unit id="8330630566060394630" datatype="html">
         <source>Scope and ownership of the product</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/legal-notice/legal-notice.component.html</context>
-          <context context-type="linenumber">20,21</context>
-        </context-group>
       </trans-unit>
       <trans-unit id="1933451194362196696" datatype="html">
         <source><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>Portfolio<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/> has been developed as part of a student group project in a web development bootcamp at the <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>Developer Akademie GmbH<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/>. It has an educational purpose and is not intended for extensive personal &amp; business usage. As such, we cannot guarantee consistent availability, reliability, accuracy, or any other aspect of quality regarding this Product. </source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/legal-notice/legal-notice.component.html</context>
-          <context context-type="linenumber">21,27</context>
-        </context-group>
       </trans-unit>
       <trans-unit id="8815091597983117163" datatype="html">
         <source>The design of <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>Portfolio<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/> is owned by the <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>Developer Akademie GmbH<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/>. Unauthorized use, reproduction, modification, distribution, or replication of the design is strictly prohibited.</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/legal-notice/legal-notice.component.html</context>
-          <context context-type="linenumber">29,31</context>
-        </context-group>
       </trans-unit>
       <trans-unit id="6458515158610880899" datatype="html">
         <source>Proprietary rights</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/legal-notice/legal-notice.component.html</context>
-          <context context-type="linenumber">32,33</context>
-        </context-group>
       </trans-unit>
       <trans-unit id="3390637331651232871" datatype="html">
         <source>Aside from the design owned by <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>Developer Akademie GmbH<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/>, we, the listed students, retain all proprietary rights in <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>Portfolio<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/>, including any associated copyrighted material, trademarks, and other proprietary information.</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/legal-notice/legal-notice.component.html</context>
-          <context context-type="linenumber">33,38</context>
-        </context-group>
       </trans-unit>
       <trans-unit id="3663536414765399634" datatype="html">
         <source>Use of the product</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/legal-notice/legal-notice.component.html</context>
-          <context context-type="linenumber">39,40</context>
-        </context-group>
       </trans-unit>
       <trans-unit id="4788943979864576636" datatype="html">
         <source><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>Portfolio<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/> is intended to be used for lawful purposes only, in accordance with all applicable laws and regulations. Any use of <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>Portfolio<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/> for illegal activities, or to harass, harm, threaten, or intimidate another person, is strictly prohibited. You are solely responsible for your interactions with other users of <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>Portfolio<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/>. </source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/legal-notice/legal-notice.component.html</context>
-          <context context-type="linenumber">40,48</context>
-        </context-group>
       </trans-unit>
       <trans-unit id="1897487720508688864" datatype="html">
         <source>Disclaimer of warranties and limitation of liability</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/legal-notice/legal-notice.component.html</context>
-          <context context-type="linenumber">48,49</context>
-        </context-group>
       </trans-unit>
       <trans-unit id="517501502249416555" datatype="html">
         <source><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>Portfolio<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/> is provided &quot;as is&quot; without warranty of any kind, whether express or implied, including but not limited to the implied warranties of merchantability, fitness for a particular purpose, and non-infringement. In no event will we, the listed students, or the <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>Developer Akademie<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/>, be liable for any direct, indirect, incidental, special, consequential or exemplary damages, including but not limited to, damages for loss of profits, goodwill, use, data, or other intangible losses, even if we have been advised of the possibility of such damages, arising out of or in connection with the use or performance of <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>Portfolio<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/>. </source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/legal-notice/legal-notice.component.html</context>
-          <context context-type="linenumber">49,60</context>
-        </context-group>
       </trans-unit>
       <trans-unit id="4704511327394108874" datatype="html">
         <source>Indemnity</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/legal-notice/legal-notice.component.html</context>
-          <context context-type="linenumber">60,61</context>
-        </context-group>
       </trans-unit>
       <trans-unit id="7328468405372095580" datatype="html">
         <source>You agree to indemnify, defend and hold harmless us, the listed students, the <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>Developer Akademie<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/>, and our affiliates, partners, officers, directors, agents, and employees, from and against any claim, demand, loss, damage, cost, or liability (including reasonable legal fees) arising out of or relating to your use of <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>Portfolio<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/> and/or your breach of this Legal Notice. </source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/legal-notice/legal-notice.component.html</context>
-          <context context-type="linenumber">61,67</context>
-        </context-group>
       </trans-unit>
       <trans-unit id="6383615444012491967" datatype="html">
         <source>For any questions or notices, please contact me at marcelgoehn@googlemail.com</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/legal-notice/legal-notice.component.html</context>
-          <context context-type="linenumber">67,68</context>
-        </context-group>
       </trans-unit>
       <trans-unit id="8402291772929756213" datatype="html">
         <source>Date: September 11, 2025</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/legal-notice/legal-notice.component.html</context>
-          <context context-type="linenumber">68,69</context>
-        </context-group>
       </trans-unit>
       <trans-unit id="5037727568421445871" datatype="html">
         <source>An image of myself</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/portfolio-page/about-me/about-me.component.html</context>
-          <context context-type="linenumber">7,8</context>
-        </context-group>
       </trans-unit>
       <trans-unit id="805930427815599295" datatype="html">
         <source>Who I Am</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/portfolio-page/about-me/about-me.component.html</context>
-          <context context-type="linenumber">11,12</context>
-        </context-group>
       </trans-unit>
       <trans-unit id="6018686961415145811" datatype="html">
         <source>About Me</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/portfolio-page/about-me/about-me.component.html</context>
-          <context context-type="linenumber">13,14</context>
-        </context-group>
       </trans-unit>
       <trans-unit id="6121746709457048663" datatype="html">
         <source>Hey there, I&apos;m Marcel! Since my childhood, I’ve been fascinated by computers and video games – today, I bring my own applications and solutions to life through code.</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/portfolio-page/about-me/about-me.component.html</context>
-          <context context-type="linenumber">14,16</context>
-        </context-group>
       </trans-unit>
       <trans-unit id="6913024093253731161" datatype="html">
         <source>An icon to represent the location</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/portfolio-page/about-me/about-me.component.html</context>
-          <context context-type="linenumber">18,19</context>
-        </context-group>
       </trans-unit>
       <trans-unit id="8096803141355742548" datatype="html">
         <source>Currently living in Aurich, Germany. I&apos;m open to work remotely and at the companys office. </source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/portfolio-page/about-me/about-me.component.html</context>
-          <context context-type="linenumber">19,20</context>
-        </context-group>
       </trans-unit>
       <trans-unit id="9192219630015448718" datatype="html">
         <source>An icon with a thinking head</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/portfolio-page/about-me/about-me.component.html</context>
-          <context context-type="linenumber">24,25</context>
-        </context-group>
       </trans-unit>
-      <trans-unit id="5419729144900312721" datatype="html">
-        <source>I’m eager to kick off my career as a Fullstack Web Developer and further expand into cloud and mobile app development</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/portfolio-page/about-me/about-me.component.html</context>
-          <context context-type="linenumber">25,26</context>
-        </context-group>
+      <trans-unit id="8320216635030587555" datatype="html">
+        <source>I’m eager to kick off my career as a Fullstack Web Developer.</source>
       </trans-unit>
       <trans-unit id="3931002722069920980" datatype="html">
         <source>A checkmark icon</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/portfolio-page/about-me/about-me.component.html</context>
-          <context context-type="linenumber">29,30</context>
-        </context-group>
       </trans-unit>
       <trans-unit id="2307200122739018553" datatype="html">
         <source>As a creative and analytical team player, I like to get challenged with complex problems to learn from them and to further expand my expertise as a Software developer.</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/portfolio-page/about-me/about-me.component.html</context>
-          <context context-type="linenumber">30,31</context>
-        </context-group>
       </trans-unit>
       <trans-unit id="3570474553590540676" datatype="html">
         <source>What my colleagues say about me</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/portfolio-page/carousel/carousel.component.html</context>
-          <context context-type="linenumber">3,4</context>
-        </context-group>
       </trans-unit>
       <trans-unit id="5968341834322210029" datatype="html">
         <source>Working with Marcel was always reliable and pleasant. He communicates clearly, thinks ahead, and delivers clean, well-documented code. Deadlines were consistently met, and even during challenging phases, he remained solution-oriented and professional.</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/portfolio-page/carousel/carousel.component.ts</context>
-          <context context-type="linenumber">17</context>
-        </context-group>
       </trans-unit>
       <trans-unit id="1842105359133561558" datatype="html">
         <source>Working with Marcel was a pleasure. His quick understanding of complex problems and clean, maintainable code pushed our project forward.</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/portfolio-page/carousel/carousel.component.ts</context>
-          <context context-type="linenumber">21</context>
-        </context-group>
       </trans-unit>
       <trans-unit id="6090757272001653645" datatype="html">
         <source>Marcel consistently delivers high-quality work and brings great ideas to the table. His positive attitude keeps the whole team motivated.</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/portfolio-page/carousel/carousel.component.ts</context>
-          <context context-type="linenumber">25</context>
-        </context-group>
       </trans-unit>
-      <trans-unit id="8810525335089871237" datatype="html">
-        <source>Marcel Göhn combines technical skill with a natural sense for teamwork. He not only writes clean and maintainable code, but also contributes valuable ideas that improve the overall project. Whenever unexpected issues appeared, Marcel approached them with creativity and a calm mindset, making him a trusted problem-solver.</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/portfolio-page/carousel/carousel.component.ts</context>
-          <context context-type="linenumber">29</context>
-        </context-group>
+      <trans-unit id="4085841021131967303" datatype="html">
+        <source>Marcel brings great energy and focus to every project. His eye for detail and ability to turn ideas into elegant solutions impressed the whole team.</source>
       </trans-unit>
-      <trans-unit id="2007034552399177635" datatype="html">
-        <source>It’s rare to meet someone as dependable as Marcel. He takes ownership of his work, delivers on time, and keeps communication transparent. Whether refining details or tackling major features, Marcel shows both precision and dedication, which consistently raises the quality of our results.</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/portfolio-page/carousel/carousel.component.ts</context>
-          <context context-type="linenumber">33</context>
-        </context-group>
+      <trans-unit id="6978284177778765751" datatype="html">
+        <source>Collaborating with Marcel was seamless. He combines strong technical skills with clear communication, making complex tasks look effortless.</source>
       </trans-unit>
       <trans-unit id="9112159250406763375" datatype="html">
         <source>Thanks! Your email is on its way. We’ll be in touch soon.</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/portfolio-page/contact-me/contact-me-dialog/contact-me-dialog.component.html</context>
-          <context context-type="linenumber">17,18</context>
-        </context-group>
       </trans-unit>
       <trans-unit id="1153721192129533394" datatype="html">
         <source>Contact me</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/portfolio-page/contact-me/contact-me.component.html</context>
-          <context context-type="linenumber">5,6</context>
-        </context-group>
       </trans-unit>
       <trans-unit id="2414646104065203299" datatype="html">
         <source>Let&apos;s work together</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/portfolio-page/contact-me/contact-me.component.html</context>
-          <context context-type="linenumber">6,7</context>
-        </context-group>
       </trans-unit>
       <trans-unit id="7822866996489761530" datatype="html">
         <source>Got a problem to solve?</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/portfolio-page/contact-me/contact-me.component.html</context>
-          <context context-type="linenumber">7,8</context>
-        </context-group>
       </trans-unit>
-      <trans-unit id="8229062534337566363" datatype="html">
-        <source>Encourage people to contact you and describe what role you are interested in. Show that you will add value to their projects through your work.</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/portfolio-page/contact-me/contact-me.component.html</context>
-          <context context-type="linenumber">8,10</context>
-        </context-group>
+      <trans-unit id="8435898354311918127" datatype="html">
+        <source>Tell me about the challenge you’re facing and let’s explore how I can make your project a success.</source>
       </trans-unit>
       <trans-unit id="5287790813566950567" datatype="html">
         <source>Need a Frontend developer? <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>Let&apos;s talk!<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/portfolio-page/contact-me/contact-me.component.html</context>
-          <context context-type="linenumber">11,12</context>
-        </context-group>
       </trans-unit>
       <trans-unit id="6470911101692007913" datatype="html">
         <source>What&apos;s your name?</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/portfolio-page/contact-me/contact-me.component.html</context>
-          <context context-type="linenumber">17,18</context>
-        </context-group>
       </trans-unit>
       <trans-unit id="7060576432395966635" datatype="html">
         <source>Your name goes here</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/portfolio-page/contact-me/contact-me.component.html</context>
-          <context context-type="linenumber">19,20</context>
-        </context-group>
       </trans-unit>
       <trans-unit id="2142279297976546390" datatype="html">
         <source>Oops! It seems your name is missing</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/portfolio-page/contact-me/contact-me.component.html</context>
-          <context context-type="linenumber">23,24</context>
-        </context-group>
       </trans-unit>
       <trans-unit id="5703462943847701340" datatype="html">
         <source>What&apos;s your email?</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/portfolio-page/contact-me/contact-me.component.html</context>
-          <context context-type="linenumber">28,29</context>
-        </context-group>
       </trans-unit>
       <trans-unit id="6068769079429266146" datatype="html">
         <source>youremail@email.com</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/portfolio-page/contact-me/contact-me.component.html</context>
-          <context context-type="linenumber">30,31</context>
-        </context-group>
       </trans-unit>
       <trans-unit id="1086353824132012340" datatype="html">
         <source>Hoppla! Your email is required</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/portfolio-page/contact-me/contact-me.component.html</context>
-          <context context-type="linenumber">34,35</context>
-        </context-group>
       </trans-unit>
       <trans-unit id="1080625167689547614" datatype="html">
         <source>How can I help you?</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/portfolio-page/contact-me/contact-me.component.html</context>
-          <context context-type="linenumber">39,40</context>
-        </context-group>
       </trans-unit>
       <trans-unit id="15274263990309644" datatype="html">
         <source>Hello Marcel, I am interested in...</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/portfolio-page/contact-me/contact-me.component.html</context>
-          <context context-type="linenumber">42</context>
-        </context-group>
       </trans-unit>
       <trans-unit id="5474173402870270688" datatype="html">
         <source>What do you need to develop?</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/portfolio-page/contact-me/contact-me.component.html</context>
-          <context context-type="linenumber">45,46</context>
-        </context-group>
       </trans-unit>
       <trans-unit id="3235936312610345505" datatype="html">
         <source> I&apos;ve read the <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;fira privacy-highlight&quot;&gt;"/>privacy policy<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/> and agree to the processing of my data as outlined. </source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/portfolio-page/contact-me/contact-me.component.html</context>
-          <context context-type="linenumber">53,55</context>
-        </context-group>
       </trans-unit>
       <trans-unit id="3633376207233325357" datatype="html">
         <source>Please accept the privacy policy.</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/portfolio-page/contact-me/contact-me.component.html</context>
-          <context context-type="linenumber">59,60</context>
-        </context-group>
       </trans-unit>
       <trans-unit id="3812767882168593296" datatype="html">
         <source>Say Hello ;)</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/portfolio-page/contact-me/contact-me.component.html</context>
-          <context context-type="linenumber">61</context>
-        </context-group>
       </trans-unit>
       <trans-unit id="2194410702774887960" datatype="html">
         <source>What is this project about?</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/portfolio-page/featured-projects/dialog/dialog.component.html</context>
-          <context context-type="linenumber">20,21</context>
-        </context-group>
       </trans-unit>
       <trans-unit id="7048193048887855990" datatype="html">
         <source>No skills have been used.</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/portfolio-page/featured-projects/dialog/dialog.component.html</context>
-          <context context-type="linenumber">26,27</context>
-        </context-group>
       </trans-unit>
       <trans-unit id="3119797645194699699" datatype="html">
         <source>Github</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/portfolio-page/featured-projects/dialog/dialog.component.html</context>
-          <context context-type="linenumber">31,32</context>
-        </context-group>
       </trans-unit>
       <trans-unit id="8032120176437848425" datatype="html">
         <source>Arrow SVG</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/portfolio-page/featured-projects/dialog/dialog.component.html</context>
-          <context context-type="linenumber">32,33</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/portfolio-page/featured-projects/dialog/dialog.component.html</context>
-          <context context-type="linenumber">36,37</context>
-        </context-group>
       </trans-unit>
       <trans-unit id="3997762502877865310" datatype="html">
         <source>Live Test</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/portfolio-page/featured-projects/dialog/dialog.component.html</context>
-          <context context-type="linenumber">35,36</context>
-        </context-group>
       </trans-unit>
       <trans-unit id="5885358523128793802" datatype="html">
         <source>Next project</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/portfolio-page/featured-projects/dialog/dialog.component.html</context>
-          <context context-type="linenumber">46,47</context>
-        </context-group>
       </trans-unit>
       <trans-unit id="718819065092803560" datatype="html">
         <source>Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/portfolio-page/featured-projects/dialog/dialog.service.ts</context>
-          <context context-type="linenumber">15</context>
-        </context-group>
       </trans-unit>
       <trans-unit id="2893348464436183227" datatype="html">
         <source>Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen.</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/portfolio-page/featured-projects/dialog/dialog.service.ts</context>
-          <context context-type="linenumber">24</context>
-        </context-group>
       </trans-unit>
       <trans-unit id="7406717173270263878" datatype="html">
         <source>This app is a dynamic Pokédex built with HTML, CSS and JavaScript. It fetches Pokémon data from an API and displays each creature with its name, image and type. Users can quickly search and explore different Pokémon in an interactive and responsive interface.</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/portfolio-page/featured-projects/dialog/dialog.service.ts</context>
-          <context context-type="linenumber">33</context>
-        </context-group>
       </trans-unit>
       <trans-unit id="7949354029476198233" datatype="html">
         <source>Featured Projects</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/portfolio-page/featured-projects/featured-projects.component.html</context>
-          <context context-type="linenumber">7,8</context>
-        </context-group>
       </trans-unit>
       <trans-unit id="4767651382957682579" datatype="html">
         <source>Explore a selection of my work here - Interact with<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/>projects to see my skills in action.</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/portfolio-page/featured-projects/featured-projects.component.html</context>
-          <context context-type="linenumber">8,9</context>
-        </context-group>
       </trans-unit>
       <trans-unit id="9213063027193991880" datatype="html">
         <source>My Join kanban board for tracking tasks</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/portfolio-page/featured-projects/featured-projects.component.html</context>
-          <context context-type="linenumber">97,98</context>
-        </context-group>
       </trans-unit>
       <trans-unit id="1911672947654811533" datatype="html">
         <source>A screenshot of Pepe, the character of El-Pollo-Loco</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/portfolio-page/featured-projects/featured-projects.component.html</context>
-          <context context-type="linenumber">102,103</context>
-        </context-group>
       </trans-unit>
       <trans-unit id="7337194497383343181" datatype="html">
         <source>A screenshot of my Pokedex</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/portfolio-page/featured-projects/featured-projects.component.html</context>
-          <context context-type="linenumber">106,107</context>
-        </context-group>
       </trans-unit>
       <trans-unit id="1007625284753612149" datatype="html">
         <source>Frontend Developer</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/portfolio-page/hero/hero.component.html</context>
-          <context context-type="linenumber">4,5</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/portfolio-page/hero/marquee/marquee.component.html</context>
-          <context context-type="linenumber">5,6</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/portfolio-page/hero/marquee/marquee.component.html</context>
-          <context context-type="linenumber">15,16</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/portfolio-page/hero/marquee/marquee.component.html</context>
-          <context context-type="linenumber">25,26</context>
-        </context-group>
       </trans-unit>
       <trans-unit id="658938984899746124" datatype="html">
         <source> Check my work </source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/portfolio-page/hero/hero.component.html</context>
-          <context context-type="linenumber">9</context>
-        </context-group>
       </trans-unit>
       <trans-unit id="3260075693421550153" datatype="html">
         <source> Contact me </source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/portfolio-page/hero/hero.component.html</context>
-          <context context-type="linenumber">14</context>
-        </context-group>
       </trans-unit>
       <trans-unit id="1113808887379847699" datatype="html">
         <source>E-Mail icon in white</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/portfolio-page/hero/hero.component.html</context>
-          <context context-type="linenumber">40,41</context>
-        </context-group>
       </trans-unit>
       <trans-unit id="3032079649070801659" datatype="html">
         <source>Github icon in white</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/portfolio-page/hero/hero.component.html</context>
-          <context context-type="linenumber">50,51</context>
-        </context-group>
       </trans-unit>
       <trans-unit id="5343578588831777002" datatype="html">
         <source>Linkedin icon in white</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/portfolio-page/hero/hero.component.html</context>
-          <context context-type="linenumber">59,60</context>
-        </context-group>
       </trans-unit>
       <trans-unit id="5601739562537722883" datatype="html">
         <source>Available for remote work</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/portfolio-page/hero/marquee/marquee.component.html</context>
-          <context context-type="linenumber">3,4</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/portfolio-page/hero/marquee/marquee.component.html</context>
-          <context context-type="linenumber">13,14</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/portfolio-page/hero/marquee/marquee.component.html</context>
-          <context context-type="linenumber">23,24</context>
-        </context-group>
       </trans-unit>
       <trans-unit id="7242344515561890406" datatype="html">
         <source>Based in Aurich</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/portfolio-page/hero/marquee/marquee.component.html</context>
-          <context context-type="linenumber">7,8</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/portfolio-page/hero/marquee/marquee.component.html</context>
-          <context context-type="linenumber">17,18</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/portfolio-page/hero/marquee/marquee.component.html</context>
-          <context context-type="linenumber">27,28</context>
-        </context-group>
       </trans-unit>
       <trans-unit id="8971755396644736436" datatype="html">
         <source>Open to work</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/portfolio-page/hero/marquee/marquee.component.html</context>
-          <context context-type="linenumber">9,10</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/portfolio-page/hero/marquee/marquee.component.html</context>
-          <context context-type="linenumber">19,20</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/portfolio-page/hero/marquee/marquee.component.html</context>
-          <context context-type="linenumber">29,30</context>
-        </context-group>
       </trans-unit>
       <trans-unit id="152625797886681940" datatype="html">
         <source>Technologies</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/portfolio-page/technologies/technologies.component.html</context>
-          <context context-type="linenumber">3,4</context>
-        </context-group>
       </trans-unit>
       <trans-unit id="6715616744532594180" datatype="html">
         <source>Skill Set</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/portfolio-page/technologies/technologies.component.html</context>
-          <context context-type="linenumber">6,7</context>
-        </context-group>
       </trans-unit>
       <trans-unit id="3689938815586024637" datatype="html">
         <source>I create modern, user-friendly web apps with HTML, CSS, and JavaScript, strengthened by TypeScript and Angular. Using Material Design, Git, Firebase, and REST APIs, I build clean, scalable solutions. With Scrum experience and a strong growth mindset, I keep learning and adapt quickly to new technologies.</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/portfolio-page/technologies/technologies.component.html</context>
-          <context context-type="linenumber">7,10</context>
-        </context-group>
       </trans-unit>
       <trans-unit id="5136656872382480212" datatype="html">
         <source>You need <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;fira&quot;&gt;"/>another skill?<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/portfolio-page/technologies/technologies.component.html</context>
-          <context context-type="linenumber">12,13</context>
-        </context-group>
       </trans-unit>
       <trans-unit id="4331213605291039053" datatype="html">
         <source>Feel free to contact me. I look forward to expanding on my previous knowledge.</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/portfolio-page/technologies/technologies.component.html</context>
-          <context context-type="linenumber">13,14</context>
-        </context-group>
       </trans-unit>
       <trans-unit id="120132752083279691" datatype="html">
         <source> Let&apos;s Talk </source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/portfolio-page/technologies/technologies.component.html</context>
-          <context context-type="linenumber">17</context>
-        </context-group>
       </trans-unit>
       <trans-unit id="3003627325494215482" datatype="html">
         <source>Next technologies I aim to learn</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/portfolio-page/technologies/technologies.component.html</context>
-          <context context-type="linenumber">28,29</context>
-        </context-group>
       </trans-unit>
       <trans-unit id="8439955599488894226" datatype="html">
         <source>Privacy Policy</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/privacy-policy/privacy-policy.component.html</context>
-          <context context-type="linenumber">5,6</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/shared/footer/footer.component.html</context>
-          <context context-type="linenumber">19,20</context>
-        </context-group>
       </trans-unit>
       <trans-unit id="2784900125513291363" datatype="html">
         <source>Responsible entity</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/privacy-policy/privacy-policy.component.html</context>
-          <context context-type="linenumber">7,8</context>
-        </context-group>
       </trans-unit>
       <trans-unit id="123842545276072825" datatype="html">
         <source>General information</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/privacy-policy/privacy-policy.component.html</context>
-          <context context-type="linenumber">14,15</context>
-        </context-group>
       </trans-unit>
       <trans-unit id="7237789234817701096" datatype="html">
         <source>Protecting your personal data is very important to me. I treat your personal data confidentially and in accordance with the statutory data protection regulations and this privacy policy. This privacy policy informs you about what data I collect, how I use it, and what rights you have regarding your data.</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/privacy-policy/privacy-policy.component.html</context>
-          <context context-type="linenumber">15,18</context>
-        </context-group>
       </trans-unit>
       <trans-unit id="7588756169888268823" datatype="html">
         <source>Hosting</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/privacy-policy/privacy-policy.component.html</context>
-          <context context-type="linenumber">19,20</context>
-        </context-group>
       </trans-unit>
       <trans-unit id="3433382600471197842" datatype="html">
         <source>This website is hosted via Firebase Hosting. The hosting provider automatically processes your IP address and other technical data when you access the site to ensure its operation. This information is stored in so-called server log files and includes:</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/privacy-policy/privacy-policy.component.html</context>
-          <context context-type="linenumber">20,22</context>
-        </context-group>
       </trans-unit>
       <trans-unit id="1140232533672197548" datatype="html">
         <source>IP address of the requesting device</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/privacy-policy/privacy-policy.component.html</context>
-          <context context-type="linenumber">24,25</context>
-        </context-group>
       </trans-unit>
       <trans-unit id="3841671300895453388" datatype="html">
         <source>Date and time of access</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/privacy-policy/privacy-policy.component.html</context>
-          <context context-type="linenumber">25,26</context>
-        </context-group>
       </trans-unit>
       <trans-unit id="5536331374960045613" datatype="html">
         <source>Browser type and version</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/privacy-policy/privacy-policy.component.html</context>
-          <context context-type="linenumber">26,27</context>
-        </context-group>
       </trans-unit>
       <trans-unit id="6835495175170725471" datatype="html">
         <source>Operating system used</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/privacy-policy/privacy-policy.component.html</context>
-          <context context-type="linenumber">27,28</context>
-        </context-group>
       </trans-unit>
       <trans-unit id="2278689684150704767" datatype="html">
         <source>Referrer URL</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/privacy-policy/privacy-policy.component.html</context>
-          <context context-type="linenumber">28,29</context>
-        </context-group>
       </trans-unit>
       <trans-unit id="130931832324979004" datatype="html">
         <source>This data is used solely for technical administration and is not merged with other data sources.</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/privacy-policy/privacy-policy.component.html</context>
-          <context context-type="linenumber">30,31</context>
-        </context-group>
       </trans-unit>
       <trans-unit id="3388566360514874541" datatype="html">
         <source>Collection and processing of personal data</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/privacy-policy/privacy-policy.component.html</context>
-          <context context-type="linenumber">32,33</context>
-        </context-group>
       </trans-unit>
       <trans-unit id="5215455085913564286" datatype="html">
         <source>My website includes a contact form. I collect the following personal data through this form:</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/privacy-policy/privacy-policy.component.html</context>
-          <context context-type="linenumber">33,34</context>
-        </context-group>
       </trans-unit>
       <trans-unit id="7827488502173159495" datatype="html">
         <source>First and last name</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/privacy-policy/privacy-policy.component.html</context>
-          <context context-type="linenumber">35,36</context>
-        </context-group>
       </trans-unit>
       <trans-unit id="3967269098753656610" datatype="html">
         <source>Email address</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/privacy-policy/privacy-policy.component.html</context>
-          <context context-type="linenumber">36,37</context>
-        </context-group>
       </trans-unit>
       <trans-unit id="5022943785253412811" datatype="html">
         <source>This data is used solely to contact you or to provide the website’s features.</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/privacy-policy/privacy-policy.component.html</context>
-          <context context-type="linenumber">38,39</context>
-        </context-group>
       </trans-unit>
       <trans-unit id="6776960195885151625" datatype="html">
         <source>Storage and Security:</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/privacy-policy/privacy-policy.component.html</context>
-          <context context-type="linenumber">39,40</context>
-        </context-group>
       </trans-unit>
       <trans-unit id="6205384593968733675" datatype="html">
         <source>Data transmission is encrypted (e.g., via HTTPS, if enabled).</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/privacy-policy/privacy-policy.component.html</context>
-          <context context-type="linenumber">40,41</context>
-        </context-group>
       </trans-unit>
       <trans-unit id="6085213163197914869" datatype="html">
         <source>Data Disclosure</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/privacy-policy/privacy-policy.component.html</context>
-          <context context-type="linenumber">41,42</context>
-        </context-group>
       </trans-unit>
       <trans-unit id="608608673922536945" datatype="html">
         <source>Your personal data is not shared with third parties. No data is transferred outside the European Union.</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/privacy-policy/privacy-policy.component.html</context>
-          <context context-type="linenumber">42,43</context>
-        </context-group>
       </trans-unit>
       <trans-unit id="1903492749275192832" datatype="html">
         <source>Use of Cookies</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/privacy-policy/privacy-policy.component.html</context>
-          <context context-type="linenumber">43,44</context>
-        </context-group>
       </trans-unit>
       <trans-unit id="8335213819693344480" datatype="html">
         <source>This website does not use cookies.</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/privacy-policy/privacy-policy.component.html</context>
-          <context context-type="linenumber">44,45</context>
-        </context-group>
       </trans-unit>
       <trans-unit id="4131071089538211661" datatype="html">
         <source>Analytics and Tracking Tools</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/privacy-policy/privacy-policy.component.html</context>
-          <context context-type="linenumber">45,46</context>
-        </context-group>
       </trans-unit>
       <trans-unit id="593453556526142506" datatype="html">
         <source>No tracking or analytics tools (e.g., Google Analytics, Matomo) are used on this website.</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/privacy-policy/privacy-policy.component.html</context>
-          <context context-type="linenumber">46,47</context>
-        </context-group>
       </trans-unit>
       <trans-unit id="4291952317863929190" datatype="html">
         <source>Your Rights</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/privacy-policy/privacy-policy.component.html</context>
-          <context context-type="linenumber">47,48</context>
-        </context-group>
       </trans-unit>
       <trans-unit id="983916734855461517" datatype="html">
         <source>You have the right to:</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/privacy-policy/privacy-policy.component.html</context>
-          <context context-type="linenumber">48,49</context>
-        </context-group>
       </trans-unit>
       <trans-unit id="1993643831415148330" datatype="html">
         <source>Access the personal data we store (Art. 15 GDPR)</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/privacy-policy/privacy-policy.component.html</context>
-          <context context-type="linenumber">50,51</context>
-        </context-group>
       </trans-unit>
       <trans-unit id="3257563097958649802" datatype="html">
         <source>Rectify inaccurate data (Art. 16 GDPR)</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/privacy-policy/privacy-policy.component.html</context>
-          <context context-type="linenumber">51,52</context>
-        </context-group>
       </trans-unit>
       <trans-unit id="7460669718685989608" datatype="html">
         <source>Request deletion of your data (Art. 17 GDPR)</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/privacy-policy/privacy-policy.component.html</context>
-          <context context-type="linenumber">52,53</context>
-        </context-group>
       </trans-unit>
       <trans-unit id="4593877511162381993" datatype="html">
         <source>Restrict processing of your data (Art. 18 GDPR)</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/privacy-policy/privacy-policy.component.html</context>
-          <context context-type="linenumber">53,54</context>
-        </context-group>
       </trans-unit>
       <trans-unit id="8411717039198648983" datatype="html">
         <source>Object to the processing of your data (Art. 21 GDPR)</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/privacy-policy/privacy-policy.component.html</context>
-          <context context-type="linenumber">54,55</context>
-        </context-group>
       </trans-unit>
       <trans-unit id="3902384549847726259" datatype="html">
         <source>Data portability (Art. 20 GDPR)</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/privacy-policy/privacy-policy.component.html</context>
-          <context context-type="linenumber">55,56</context>
-        </context-group>
       </trans-unit>
       <trans-unit id="2997973559424746185" datatype="html">
         <source>To exercise these rights, you can contact me via email: marcelgoehn@googlemail.com</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/privacy-policy/privacy-policy.component.html</context>
-          <context context-type="linenumber">57,58</context>
-        </context-group>
       </trans-unit>
       <trans-unit id="161816363152980056" datatype="html">
         <source>Data Retention</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/privacy-policy/privacy-policy.component.html</context>
-          <context context-type="linenumber">58,59</context>
-        </context-group>
       </trans-unit>
       <trans-unit id="1059914107666624479" datatype="html">
         <source>I store your personal data only as long as necessary for the intended purpose or as required by law.</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/privacy-policy/privacy-policy.component.html</context>
-          <context context-type="linenumber">59,60</context>
-        </context-group>
       </trans-unit>
       <trans-unit id="1721635618128436974" datatype="html">
         <source>Data Security</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/privacy-policy/privacy-policy.component.html</context>
-          <context context-type="linenumber">60,61</context>
-        </context-group>
       </trans-unit>
       <trans-unit id="6325451431376155378" datatype="html">
         <source>I implement technical and organizational security measures to protect your data against manipulation, loss, destruction, or unauthorized access.</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/privacy-policy/privacy-policy.component.html</context>
-          <context context-type="linenumber">61,62</context>
-        </context-group>
       </trans-unit>
       <trans-unit id="1851193574480570184" datatype="html">
         <source>Changes to This Privacy Policy</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/privacy-policy/privacy-policy.component.html</context>
-          <context context-type="linenumber">62,63</context>
-        </context-group>
       </trans-unit>
       <trans-unit id="4744535266745212094" datatype="html">
         <source>I reserve the right to amend this privacy policy at any time to comply with current legal requirements. The latest version is available on my website under the specified contact address.</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/privacy-policy/privacy-policy.component.html</context>
-          <context context-type="linenumber">63,64</context>
-        </context-group>
       </trans-unit>
       <trans-unit id="6505197656529939278" datatype="html">
         <source>Last updated: September 2025</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/privacy-policy/privacy-policy.component.html</context>
-          <context context-type="linenumber">64,65</context>
-        </context-group>
       </trans-unit>
       <trans-unit id="74409629521908011" datatype="html">
         <source>Web Developer</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/shared/footer/footer.component.html</context>
-          <context context-type="linenumber">6,7</context>
-        </context-group>
       </trans-unit>
       <trans-unit id="3290749529645618563" datatype="html">
         <source>Aurich Germany</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/shared/footer/footer.component.html</context>
-          <context context-type="linenumber">7,8</context>
-        </context-group>
       </trans-unit>
       <trans-unit id="3562199946446423606" datatype="html">
         <source>About me</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/shared/header/header.component.html</context>
-          <context context-type="linenumber">13,14</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/shared/header/header.component.html</context>
-          <context context-type="linenumber">43,44</context>
-        </context-group>
       </trans-unit>
       <trans-unit id="7091571651222742304" datatype="html">
         <source>Projects</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/shared/header/header.component.html</context>
-          <context context-type="linenumber">17,18</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/shared/header/header.component.html</context>
-          <context context-type="linenumber">49,50</context>
-        </context-group>
       </trans-unit>
     </body>
   </file>
