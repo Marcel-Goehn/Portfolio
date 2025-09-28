@@ -16,7 +16,7 @@ export class DialogService {
       usedTech: ['CSS', 'HTML', 'Firebase', 'JavaScript'],
       snapshot: 'assets/img/dialog/join.png',
       github: 'https://github.com/Marcel-Goehn/Join-Dashboard',
-      route: 'https://marcel-goehn.developerakademie.net/Join/'
+      route: 'https://join.marcelgoehn.de'
     },
     {
       id: 2,
@@ -25,7 +25,7 @@ export class DialogService {
       usedTech: ['JavaScript', 'HTML', 'CSS'],
       snapshot: 'assets/img/dialog/el-pollo-loco.png',
       github: 'https://github.com/Marcel-Goehn/El-Pollo-Loco',
-      route: 'https://marcel-goehn.developerakademie.net/pollo-loco/'
+      route: 'https://el-pollo-loco.marcelgoehn.de'
     },
     {
       id: 3,
@@ -34,7 +34,7 @@ export class DialogService {
       usedTech: ['JavaScript', 'HTML', 'CSS'],
       snapshot: 'assets/img/dialog/pokedex.png',
       github: 'https://github.com/Marcel-Goehn/pokedex',
-      route: 'https://marcel-goehn.developerakademie.net/pokedex/'
+      route: 'https://pokedex.marcelgoehn.de'
     }
   ]);
   dialogData$ = this.dialogData.asReadonly();
