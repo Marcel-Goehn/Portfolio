@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, inject, signal } from '@angular/core';
+import { ChangeDetectionStrategy, Component, inject, OnInit, signal } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterLink } from '@angular/router';
 import { HeaderService } from './header.service';
@@ -15,7 +15,7 @@ import { LogoComponent } from "../logo/logo.component";
     '(window:resize)': 'onResize()'
   }
 })
-export class HeaderComponent {
+export class HeaderComponent implements OnInit {
   private headerService = inject(HeaderService);
   aboutMeIsClicked = this.headerService.aboutmeIsClicked$;
   skillIsClicked = this.headerService.skillIsClicked$;
@@ -28,11 +28,28 @@ export class HeaderComponent {
 
 
   /**
-   * It changes the look of the buttons when a specific language is active
+   * Add's the css to the current active language button
+   */
+  ngOnInit(): void {
+    if (window.location.href.includes('/de/')) {
+      this.german.set(true);
+      this.english.set(false);
+    } else {
+      this.english.set(true);
+      this.german.set(false);
+    }
+  }
+
+
+  /**
+   * Changes the language and redirects to the right page
    */
   changeLanguage() {
-    this.english.set(!this.english());
-    this.german.set(!this.german());
+    if (this.english()) {
+      window.location.assign('https://marcelgoehn.de/de/');
+    } else {
+      window.location.assign('https://marcelgoehn.de/en-US/');
+    }
   }
 
 
@@ -41,6 +58,10 @@ export class HeaderComponent {
    */
   changeActiveNavLink(boolOne: boolean, boolTwo: boolean, boolThree: boolean) {
     this.headerService.changeActiveNavLink(boolOne, boolTwo, boolThree);
+
+    if (this.burgerMenuOpen()) {
+      this.closeBurgerMenu();
+    }
   }
 
 

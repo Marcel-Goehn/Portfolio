@@ -28,7 +28,6 @@ export class FooterComponent implements OnInit {
   ngOnInit(): void {
     const subscription = this.activatedRoute.url.subscribe({
       next: (param) => {
-        debugger;
         if (!param.length) {
           return;
         }
