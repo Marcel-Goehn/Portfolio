@@ -5,9 +5,8 @@
                 <h4 i18n class="karla">Contact me</h4>
                 <h3 i18n class="fira">Let's work together</h3>
                 <h4 i18n class="fira">Got a problem to solve?</h4>
-                <p i18n class="karla">Encourage people to contact you and describe what role you are interested in. Show that
-                    you
-                    will add value to their projects through your work.</p>
+                <p i18n class="karla">Tell me about the challenge you’re facing and let’s explore how I can make your
+                    project a success.</p>
                 <p i18n class="karla">Need a Frontend developer? <span>Let's talk!</span></p>
             </article>
 
@@ -16,8 +15,8 @@
                     <div class="name-container" (click)="removeValidationError('name')">
                         <label i18n class="fira" for="name">What's your name?</label>
                         @if (!enteredNameInvalid()) {
-                        <input class="karla" type="text" name="name" id="name" i18n-placeholder placeholder="Your name goes here"
-                            formControlName="name">
+                        <input class="karla" type="text" name="name" id="name" i18n-placeholder
+                            placeholder="Your name goes here" formControlName="name">
                         }
                         @else {
                         <p i18n class="karla invalid-message">Oops! It seems your
@@ -27,8 +26,8 @@
                     <div class="email-container" (click)="removeValidationError('email')">
                         <label i18n class="fira" for="email">What's your email?</label>
                         @if (!enteredEmailInvalid()) {
-                        <input class="karla" type="email" name="email" id="email" i18n-placeholder placeholder="youremail@email.com"
-                            formControlName="email">
+                        <input class="karla" type="email" name="email" id="email" i18n-placeholder
+                            placeholder="youremail@email.com" formControlName="email">
                         }
                         @else {
                         <p i18n class="karla invalid-message">Hoppla! Your email is
@@ -38,8 +37,8 @@
                     <div class="interest-container" (click)="removeValidationError('message')">
                         <label i18n class="fira" for="interest">How can I help you?</label>
                         @if (!enteredMessageInvalid()) {
-                        <input class="karla" type="text" id="interest" name="message"
-                            i18n-placeholder placeholder="Hello Marcel, I am interested in..." formControlName="message">
+                        <input class="karla" type="text" id="interest" name="message" i18n-placeholder
+                            placeholder="Hello Marcel, I am interested in..." formControlName="message">
                         }
                         @else {
                         <p i18n class="karla invalid-message">What do you need to
@@ -56,7 +55,8 @@
                             </span>
                         </label>
                     </div>
-                    <p i18n [ngClass]="{ 'hideCheckBoxError' : checkboxValid() }" class="karla invalid-privacy-policy-message">Please accept the privacy policy.</p>
+                    <p i18n [ngClass]="{ 'hideCheckBoxError' : checkboxValid() }"
+                        class="karla invalid-privacy-policy-message">Please accept the privacy policy.</p>
                     <div class="btn-container">
                         <button i18n appButton class="karla" type="submit">Say Hello ;&#41;</button>
                     </div>
@@ -65,6 +65,6 @@
         </div>
     </div>
     @if (emailGotDelivered()) {
-        <app-contact-me-dialog (close)="closeDialog($event)"/>
+    <app-contact-me-dialog (close)="closeDialog($event)" />
     }
 </section>

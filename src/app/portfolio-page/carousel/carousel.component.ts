@@ -15,23 +15,23 @@ export class CarouselComponent {
   testimonialData = signal<Testimonial[]>([
     {
       text: $localize`Working with Marcel was always reliable and pleasant. He communicates clearly, thinks ahead, and delivers clean, well-documented code. Deadlines were consistently met, and even during challenging phases, he remained solution-oriented and professional.`,
-      name: "P. Höpner - Team Partner"
+      name: "P. Höpner - Team Member"
     },
     {
       text: $localize`Working with Marcel was a pleasure. His quick understanding of complex problems and clean, maintainable code pushed our project forward.`,
-      name: "S. Weber – Project Lead"
+      name: "S. Weber – Team Member"
     },
     {
       text: $localize`Marcel consistently delivers high-quality work and brings great ideas to the table. His positive attitude keeps the whole team motivated.`,
       name: "L. Fischer – Team Member"
     },
     {
-      text: $localize`Marcel Göhn combines technical skill with a natural sense for teamwork. He not only writes clean and maintainable code, but also contributes valuable ideas that improve the overall project. Whenever unexpected issues appeared, Marcel approached them with creativity and a calm mindset, making him a trusted problem-solver.`,
-      name: "K. Stein – Team Coordinator"
+      text: $localize`Marcel brings great energy and focus to every project. His eye for detail and ability to turn ideas into elegant solutions impressed the whole team.`,
+      name: "L. Hoffmann – Team Member"
     },
     {
-      text: $localize`It’s rare to meet someone as dependable as Marcel. He takes ownership of his work, delivers on time, and keeps communication transparent. Whether refining details or tackling major features, Marcel shows both precision and dedication, which consistently raises the quality of our results.`,
-      name: "J. Brandt – Lead Developer"
+      text: $localize`Collaborating with Marcel was seamless. He combines strong technical skills with clear communication, making complex tasks look effortless.`,
+      name: "A. Richter – Team Member"
     }
   ]);
 
