@@ -8,7 +8,7 @@ section {
     background-size: cover;
     height: 100dvh;
     position: relative;
-    overflow-x: hidden
+    overflow-x: hidden;
 }
 
 .container {
@@ -173,11 +173,15 @@ h1 {
 
 @media (max-height: 820px) {
     .bottom-nav-border {
-        height: 100px;
+        height: 75px;
     }
 
     .bottom-social-border {
         height: 10px;
+    }
+
+    app-marquee {
+        display: none;
     }
 }
 
