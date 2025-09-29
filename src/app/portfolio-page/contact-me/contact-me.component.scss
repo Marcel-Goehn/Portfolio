@@ -142,8 +142,10 @@ select:autofill,
 
         &::before {
             content: '';
-            width: 18px;
-            height: 18px;
+            min-width: 18px;
+            min-height: 18px;
+            max-width: 18px;
+            max-height: 18px;
             border-radius: 5px;
             border: 2px solid $teal-dark;
             margin-right: 0.5rem;

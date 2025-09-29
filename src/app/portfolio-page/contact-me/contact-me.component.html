@@ -55,7 +55,7 @@
                             </span>
                         </label>
                     </div>
-                    <p i18n [ngClass]="{ 'hideCheckBoxError' : checkboxValid() }"
+                    <p i18n [ngClass]="{ 'hideCheckBoxError' : checkboxValid() || !gotClicked() }"
                         class="karla invalid-privacy-policy-message">Please accept the privacy policy.</p>
                     <div class="btn-container">
                         <button i18n appButton class="karla" type="submit">Say Hello ;&#41;</button>

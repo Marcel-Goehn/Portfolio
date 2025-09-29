@@ -30,6 +30,7 @@ export class ContactMeComponent implements OnInit {
   enteredMessageInvalid = signal(false);
   checkboxValid = signal(false);
   emailGotDelivered = signal(false);
+  gotClicked = signal(false);
 
   form = new FormGroup({
     name: new FormControl("", {
@@ -54,7 +55,12 @@ export class ContactMeComponent implements OnInit {
    */
   ngOnInit(): void {
     const subscription = this.form.controls.checkbox.valueChanges.subscribe({
-      next: value => this.checkboxValid.set(value!)
+      next: value => {
+        this.checkboxValid.set(value!);
+        if (!this.gotClicked()) {
+          this.gotClicked.set(true);
+        }
+      }
     });
 
     this.destroyRef.onDestroy(() => subscription.unsubscribe());
