@@ -49,12 +49,6 @@ export class HeaderComponent implements OnInit {
     const route = this.router.url;
 
     if (route !== '/') {
-      console.log(`https://marcelgoehn.de/de${route}`)
-    } else {
-      console.log('https://marcelgoehn.de/de');
-    }
-
-    if (route !== '/') {
       if (this.english()) {
         window.location.assign(`https://marcelgoehn.de/de${route}`);
       } else {
