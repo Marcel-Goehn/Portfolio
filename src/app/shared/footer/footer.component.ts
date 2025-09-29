@@ -45,4 +45,15 @@ export class FooterComponent implements OnInit {
     this.headerService.resetActiveHeaderLinks();
     this.router.navigate([route]);
   }
+
+
+  /**
+   * Scrolls to the top/start of the page
+   */
+  scrollToStart() {
+    window.scroll({
+      top: 0,
+      behavior: 'smooth'
+    });
+  }
 }

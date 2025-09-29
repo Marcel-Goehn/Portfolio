@@ -166,12 +166,6 @@ span {
     }
 
     .skill-icons-container {
-        justify-content: start;
-    }
-}
-
-@media (max-width: 500px) {
-    .skill-icons-container {
         justify-content: center;
     }
 }
