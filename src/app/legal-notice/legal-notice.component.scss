@@ -6,6 +6,9 @@ section {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
 }
 
 .back-btn {
@@ -24,6 +27,7 @@ h1 {
 .container {
     @include container();
     padding-inline: 13.5rem;
+    flex: 1;
 }
 
 .imprint-header-h3 {
