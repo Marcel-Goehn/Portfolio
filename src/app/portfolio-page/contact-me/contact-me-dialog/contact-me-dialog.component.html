@@ -1,4 +1,4 @@
-<dialog #dialog>
+<dialog #dialog (keydown.Escape)="onEscCloseDialog($event)">
     <div class="wrapper">
         <div class="button-container">
             <button (click)="closePopUp()">

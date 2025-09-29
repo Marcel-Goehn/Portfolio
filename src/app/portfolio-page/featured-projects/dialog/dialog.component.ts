@@ -18,7 +18,6 @@ export class DialogComponent implements AfterViewInit {
   private dialogService = inject(DialogService);
   data = this.dialogService.dialogData$;
   index = this.dialogService.index;
-  // $localize: any;
 
 
   /**
@@ -54,5 +53,11 @@ export class DialogComponent implements AfterViewInit {
    */
   onCloseDialog() {
     this.dialogService.dialogOpened.set(false);
+  }
+
+
+  onEscCloseDialog(e: Event) {
+    e.preventDefault();
+    this.onCloseDialog();
   }
 }

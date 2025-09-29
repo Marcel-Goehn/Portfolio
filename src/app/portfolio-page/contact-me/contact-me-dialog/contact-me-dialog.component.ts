@@ -26,4 +26,10 @@ export class ContactMeDialogComponent implements AfterViewInit{
   closePopUp() {
     this.close.emit(false);
   }
+
+
+  onEscCloseDialog(e: Event) {
+    e.preventDefault();
+    this.closePopUp();
+  }
 }
