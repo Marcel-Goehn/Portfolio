@@ -1,6 +1,6 @@
 import { ChangeDetectionStrategy, Component, inject, OnInit, signal } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RouterLink } from '@angular/router';
+import { Router, RouterLink } from '@angular/router';
 import { HeaderService } from './header.service';
 import { LogoComponent } from "../logo/logo.component";
 
@@ -16,6 +16,7 @@ import { LogoComponent } from "../logo/logo.component";
   }
 })
 export class HeaderComponent implements OnInit {
+  private router = inject(Router);
   private headerService = inject(HeaderService);
   aboutMeIsClicked = this.headerService.aboutmeIsClicked$;
   skillIsClicked = this.headerService.skillIsClicked$;
@@ -45,10 +46,26 @@ export class HeaderComponent implements OnInit {
    * Changes the language and redirects to the right page
    */
   changeLanguage() {
-    if (this.english()) {
-      window.location.assign('https://marcelgoehn.de/de/');
+    const route = this.router.url;
+
+    if (route !== '/') {
+      console.log(`https://marcelgoehn.de/de${route}`)
     } else {
-      window.location.assign('https://marcelgoehn.de/en-US/');
+      console.log('https://marcelgoehn.de/de');
+    }
+
+    if (route !== '/') {
+      if (this.english()) {
+        window.location.assign(`https://marcelgoehn.de/de${route}`);
+      } else {
+        window.location.assign(`https://marcelgoehn.de/en-US${route}`);
+      }
+    } else {
+      if (this.english()) {
+        window.location.assign('https://marcelgoehn.de/de/');
+      } else {
+        window.location.assign('https://marcelgoehn.de/en-US/');
+      }
     }
   }
 
