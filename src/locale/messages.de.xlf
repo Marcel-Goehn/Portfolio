@@ -8,7 +8,7 @@
       </trans-unit>
       <trans-unit id="1368884853095124539" datatype="html">
         <source>Legal Notice</source>
-        <target>Rechtlicher Hinweis</target>
+        <target>Impressum</target>
       </trans-unit>
       <trans-unit id="5891707175321515013" datatype="html">
         <source>Imprint</source>
@@ -140,7 +140,7 @@
       </trans-unit>
       <trans-unit id="2414646104065203299" datatype="html">
         <source>Let&apos;s work together</source>
-        <target>Lassen Sie uns zusammenarbeiten</target>
+        <target>Lassen Sie uns starten</target>
       </trans-unit>
       <trans-unit id="7822866996489761530" datatype="html">
         <source>Got a problem to solve?</source>
@@ -158,10 +158,6 @@
         <source>Your name goes here</source>
         <target>Ihr Name kommt hier hin</target>
       </trans-unit>
-      <trans-unit id="2142279297976546390" datatype="html">
-        <source>Oops! It seems your name is missing</source>
-        <target>Ups! Es scheint, dass Ihr Name fehlt</target>
-      </trans-unit>
       <trans-unit id="5703462943847701340" datatype="html">
         <source>What&apos;s your email?</source>
         <target>Wie lautet Ihre E-Mail-Adresse?</target>
@@ -170,21 +166,17 @@
         <source>youremail@email.com</source>
         <target>youremail@email.com</target>
       </trans-unit>
-      <trans-unit id="1086353824132012340" datatype="html">
-        <source>Hoppla! Your email is required</source>
-        <target>Hoppla! Ihre E-Mail-Adresse wird benötigt</target>
-      </trans-unit>
       <trans-unit id="1080625167689547614" datatype="html">
         <source>How can I help you?</source>
         <target>Wie kann ich Ihnen helfen?</target>
       </trans-unit>
       <trans-unit id="15274263990309644" datatype="html">
         <source>Hello Marcel, I am interested in...</source>
-        <target>Hallo Marcel, ich bin interessiert an …</target>
+        <target>Hallo Marcel, ich bin …</target>
       </trans-unit>
       <trans-unit id="5474173402870270688" datatype="html">
         <source>What do you need to develop?</source>
-        <target>Was möchten Sie entwickeln lassen?</target>
+        <target>Was benötigen Sie?</target>
       </trans-unit>
       <trans-unit id="3235936312610345505" datatype="html">
         <source> I&apos;ve read the <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;fira privacy-highlight&quot;&gt;"/>privacy policy<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/> and agree to the processing of my data as outlined. </source>
@@ -236,7 +228,7 @@
       </trans-unit>
       <trans-unit id="7949354029476198233" datatype="html">
         <source>Featured Projects</source>
-        <target>Ausgewählte Projekte</target>
+        <target>Projekte</target>
       </trans-unit>
       <trans-unit id="4767651382957682579" datatype="html">
         <source>Explore a selection of my work here - Interact with<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/>projects to see my skills in action.</source>
@@ -260,11 +252,11 @@
       </trans-unit>
       <trans-unit id="658938984899746124" datatype="html">
         <source> Check my work </source>
-        <target> Schauen Sie sich meine Arbeit an </target>
+        <target> Meine Projekte </target>
       </trans-unit>
       <trans-unit id="3260075693421550153" datatype="html">
         <source> Contact me </source>
-        <target> Kontaktieren Sie mich </target>
+        <target> Kontakt </target>
       </trans-unit>
       <trans-unit id="1113808887379847699" datatype="html">
         <source>E-Mail icon in white</source>
@@ -296,7 +288,7 @@
       </trans-unit>
       <trans-unit id="6715616744532594180" datatype="html">
         <source>Skill Set</source>
-        <target>Fähigkeiten</target>
+        <target>Skills</target>
       </trans-unit>
       <trans-unit id="3689938815586024637" datatype="html">
         <source>I create modern, user-friendly web apps with HTML, CSS, and JavaScript, strengthened by TypeScript and Angular. Using Material Design, Git, Firebase, and REST APIs, I build clean, scalable solutions. With Scrum experience and a strong growth mindset, I keep learning and adapt quickly to new technologies.</source>
@@ -320,7 +312,7 @@
       </trans-unit>
       <trans-unit id="8439955599488894226" datatype="html">
         <source>Privacy Policy</source>
-        <target>Datenschutzerklärung</target>
+        <target>Datenschutz</target>
       </trans-unit>
       <trans-unit id="2784900125513291363" datatype="html">
         <source>Responsible entity</source>
@@ -525,6 +517,14 @@
       <trans-unit id="8435898354311918127" datatype="html">
         <source>Tell me about the challenge you’re facing and let’s explore how I can make your project a success.</source>
         <target state="new">Erzählen Sie mir von der Herausforderung, vor der Sie stehen, und lassen Sie uns gemeinsam herausfinden, wie ich Ihr Projekt zum Erfolg führen kann.</target>
+      </trans-unit>
+      <trans-unit id="2204489847164928310" datatype="html">
+        <source>It seems your name is missing</source>
+        <target state="new">Ihr Name fehlt...</target>
+      </trans-unit>
+      <trans-unit id="8364441857743307938" datatype="html">
+        <source>Your email is required</source>
+        <target state="new">Ihre E-Mail fehlt...</target>
       </trans-unit>
     </body>
   </file>

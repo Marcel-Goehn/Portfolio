@@ -73,6 +73,7 @@ export class ContactMeComponent implements OnInit {
    * @returns - It return's if the form is invalid
    */
   onSubmit(e: Event) {
+    
     if (this.form.invalid) {
       if (!this.form.controls.name.valid) {
         this.enteredNameInvalid.set(true);
@@ -88,6 +89,9 @@ export class ContactMeComponent implements OnInit {
 
       if (!this.form.controls.checkbox.valid) {
         this.checkboxValid.set(false);
+      }
+      if (!this.gotClicked()) {
+        this.gotClicked.set(true);
       }
       return;
     }
@@ -109,6 +113,7 @@ export class ContactMeComponent implements OnInit {
         () => {
           this.form.reset();
           this.emailGotDelivered.set(true);
+          this.gotClicked.set(false);
         },
         (error) => {
           console.error('FAILED...', (error as EmailJSResponseStatus).text);

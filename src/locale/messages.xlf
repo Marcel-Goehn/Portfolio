@@ -140,17 +140,11 @@
       <trans-unit id="7060576432395966635" datatype="html">
         <source>Your name goes here</source>
       </trans-unit>
-      <trans-unit id="2142279297976546390" datatype="html">
-        <source>Oops! It seems your name is missing</source>
-      </trans-unit>
       <trans-unit id="5703462943847701340" datatype="html">
         <source>What&apos;s your email?</source>
       </trans-unit>
       <trans-unit id="6068769079429266146" datatype="html">
         <source>youremail@email.com</source>
-      </trans-unit>
-      <trans-unit id="1086353824132012340" datatype="html">
-        <source>Hoppla! Your email is required</source>
       </trans-unit>
       <trans-unit id="1080625167689547614" datatype="html">
         <source>How can I help you?</source>
@@ -394,6 +388,12 @@
       </trans-unit>
       <trans-unit id="7091571651222742304" datatype="html">
         <source>Projects</source>
+      </trans-unit>
+      <trans-unit id="2204489847164928310" datatype="html">
+        <source>It seems your name is missing</source>
+      </trans-unit>
+      <trans-unit id="8364441857743307938" datatype="html">
+        <source>Your email is required</source>
       </trans-unit>
     </body>
   </file>
